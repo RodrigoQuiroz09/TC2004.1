@@ -8,7 +8,7 @@ On the other hand, the FaceDetector.cpp file contains the actual code that allow
 
 The xml files that serve the purpose of the cascades to be used to identify faces are to be located in a separate file called "cascades" (please visualize the way in which the FaceDetection subdirectory is organized, as it SHOULD be replicated by anyone working with the code of this module). This structure is MANDATORY as the FaceDetector.cpp uses relative paths to load and used these files. Failure in following this file organization will result in a non-working piece of code. <br />
 
-In terms of the CMakeList.txt file, please kep in mind that line 17 should be modified with the path in which you have installed your OpenCv and specially the subdirectory "build". <br />
+In terms of the CMakeList.txt file, please keep in mind that line 17 should be modified with the path in which you have installed your OpenCV and specially the subdirectory "build". <br />
 
 No extra libraries (other than OpenCV) or dependencies are needed for the correct implementation of this module's code. <br />
 
