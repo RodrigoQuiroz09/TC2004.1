@@ -6,5 +6,8 @@ In the FaceDetector.hpp, it is possible to find the declaration of the class "Fa
 
 On the other hand, the FaceDetector.cpp file contains the actual code that allows the module to detect and validate faces. Every method coded in this file has comment within it that explain the purpose and functioning of certain lines that could be confussing at first sight. In case there is a doubt on the use of a function or the reasoning behind some parameters used fot this methods, do not hesitate to ask for help! <br />
 
-//Falta explicar estructura del modulo (cascades en cierta carpeta...)
+The xml files that serve the purpose of the cascades to be used to identify faces are to be located in a separate file called "cascades" (please visualize the way in which the FaceDetection subdirectory is organized, as it SHOULD be replicated by anyone working with the code of this module). This structure is MANDATORY as the FaceDetector.cpp uses relative paths to load and used these files. Failure in following this file organization will result in a non-working piece of code. <br />
+
+No extra libraries or dependencies are needed for the correct implementation of this module's code. <br />
+
 //Falta explicar modificaciones al Cmake
