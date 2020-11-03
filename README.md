@@ -15,12 +15,12 @@ Case 2: Identification of any person trying to enter the campus. The developed s
 ### Modules that make up the system (brief and easy to understand overview)
 #### Face Detection
 Via Haar Cascades, this module is in charge detecting of all faces captured by the camera in which the system is being executed. In case of having multiple matches at a certain instance (more than one), the proposed solution discards all but the one with more proximity and bigger area at that particular moment. <br />
-Furthermore, a validation of the detected face described in the previous paragraph is performed. With this, the module assures that the detected object by the camera is in fact the face of a person. <br />
+Furthermore, a validation of the detected face described in the previous paragraph is performed. With this, the module assures that the detected object by the camera is in fact the face of a person.
 
 #### Face Alignment
 Using shape predictors in order to dectect facial landmarks (68 points thourghout any face being analyzed), this module is in charge of "normalizing" the output from the "Face Detection" module. This normalization contemplates the necessity of rotating, translating and scaling the aforementioned output so the "Features Extraction" module can perform its tasks properly.
 
 #### Features Extraction
-
+The Feature Extraction module takes a Mat object and extracts its information using a deep learning method that uses 29 layers in order to obtain the features, which are stored in a Mat vector size 1x128. Also, this module can make a comparison between two mat images. Both of the activities performed by this module are of great importance for the achievement of both Cases mentioned in the "General Description of the System" headland.
 
 #### Redundancy
