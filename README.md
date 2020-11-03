@@ -5,5 +5,11 @@
 ## Professor: Dr.Leonardo Chang Fernández
 ## Semester:Aug-Dec 2020
 
+###General Description of the System
 
 
+###Modules that make up the system (brief overview)
+####Face Detection
+####Face Alignment
+####Features Extraction
+####Redundancy
