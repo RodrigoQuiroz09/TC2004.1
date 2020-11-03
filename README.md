@@ -24,3 +24,4 @@ Using shape predictors in order to dectect facial landmarks (68 points thourghou
 The Feature Extraction module takes a Mat object and extracts its information using a deep learning method that uses 29 layers in order to obtain the features, which are stored in a Mat vector size 1x128. Also, this module can make a comparison between two mat images. Both of the activities performed by this module are of great importance for the achievement of both Cases mentioned in the "General Description of the System" headland.
 
 #### Redundancy
+Last but not least, this module in in charge of storing the data requiered for the entire system to work. Functionalities like registering, removing or updating a client, retrieving a client's image, loading all the registered clients to the memory of the computers in which the system is being executed and generating unique identifiers for each client are to be done by this last module.
