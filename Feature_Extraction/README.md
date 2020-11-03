@@ -5,6 +5,12 @@ Este es el módulo encargado de Feature Extraction para el proyecto de reconocim
 
 Recuerden que para poder compilar y correr el programa deben de seguir los siguientes pasos:
 
+*IMPORTANTE:
+
+Se debe de descargar la librería DLib, para poderse compilar y ejecutar.*
+
+*Se debe de modificar el CMakeLists.txt con el path correcto de Dlib y de OpenCV de aquel que compile este módulo*
+
 1. mkdir build (En caso de que no exista)
 2. cd build
 3. cmake ..
