@@ -20,3 +20,6 @@ In order to correctly compile this module, perform the following commands: <br /
 - 4. make
 - 5. /my_project
  
+The following image shows the capabilities of this module to detect, validate and show the user of the system the faces being detected in real time. <br />
+
+![Photographic Proof 1](https://github.com/RodrigoQuiroz09/TC2004.1/blob/main/Face_Detection/ReadMe_Images/FaceDetectio_ReadMe_Image1.jpeg)
