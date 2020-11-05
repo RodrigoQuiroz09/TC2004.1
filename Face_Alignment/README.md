@@ -1,5 +1,4 @@
-# TC2004.1
-Team 2: Detection of landmarks and face alignment.
+# TC2004.1 Team 2: Detection of landmarks and face alignment.
 The purpose of this module is to adjust received images with a face detected, using predefined parameters to have the resulting images in the same format. The program makes the adjustments from a recevied position where a face had been detected, the landmarks are drawn in order to use strategic points to correctly scale, rotate and tranform the image, resulting in an aligned and cropped face of the person in the image.
 
 It is important to have the following model “shape_predictor_5_face_landmarks.dat” downloaded (it is already included in the src folder) as it is our face landmarking model to align faces to a standard pose.
@@ -12,7 +11,7 @@ include (C:/Users/malte/Downloads/dlib-19.21/dlib/cmake). On the same note, line
 With this, there should be no problem in compiling the module’s code. 
 
 Following so, the steps to compile and run the module are the following:
-1. mkdir build (if the folder doesn’t exist)
+1. mkdir build (if the file doesn’t exist)
 2. cd build
 3. cmake ..
 4. cmake — build . —config Release
