@@ -12,7 +12,7 @@ include (C:/Users/malte/Downloads/dlib-19.21/dlib/cmake). On the same note, line
 With this, there should be no problem in compiling the module’s code. 
 
 Following so, the steps to compile and run the module are the following:
-1. mkdir build (if the file doesn’t exist)
+1. mkdir build (if the folder doesn’t exist)
 2. cd build
 3. cmake ..
 4. cmake — build . —config Release
