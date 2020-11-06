@@ -29,20 +29,20 @@ endif()
 # to the absolute path to the directory containing OpenCVConfig.cmake file
 # via the command line or GUI
 
-    set(OpenCV_DIR "/Users/isaacgarza/opencv/install/lib/cmake/opencv4")
-    set(dlib_DIR "/usr/local/Cellar/dlib/19.21/include/dlib")
+    set(OpenCV_DIR "/home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4")
+    #set(dlib_DIR "/usr/local/Cellar/dlib/19.21/include/dlib")
 
 
 
 #find_package(OpenCV REQUIRED)
-find_package(OpenCV REQUIRED PATHS /Users/isaacgarza/opencv/install/lib/cmake/opencv4)
+find_package(OpenCV REQUIRED PATHS /home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4)
 message(STATUS "OpenCV library status:")
 message(STATUS "    config: ${OpenCV_DIR}")
 message(STATUS "    version: ${OpenCV_VERSION}")
 message(STATUS "    libraries: ${OpenCV_LIBS}")
 message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
 
-find_package(dlib REQUIRED)
+#find_package(dlib REQUIRED)
 
 file(GLOB srcs *.cpp *.c)
 file(GLOB hdrs *.hpp *.h)

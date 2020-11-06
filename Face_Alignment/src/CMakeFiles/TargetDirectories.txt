@@ -1,0 +1,6 @@
+/home/emilioag/Documents/TC2004.1/Face_Alignment/src/CMakeFiles/rebuild_cache.dir
+/home/emilioag/Documents/TC2004.1/Face_Alignment/src/CMakeFiles/edit_cache.dir
+/home/emilioag/Documents/TC2004.1/Face_Alignment/src/CMakeFiles/my_project.dir
+/home/emilioag/Documents/TC2004.1/Face_Alignment/src/dlib_build/CMakeFiles/edit_cache.dir
+/home/emilioag/Documents/TC2004.1/Face_Alignment/src/dlib_build/CMakeFiles/rebuild_cache.dir
+/home/emilioag/Documents/TC2004.1/Face_Alignment/src/dlib_build/CMakeFiles/dlib.dir
