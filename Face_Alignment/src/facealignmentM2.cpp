@@ -20,7 +20,7 @@ extrac_image_chip to align the image
 
 Facealignment::Facealignment()
 {
-    dlib::deserialize("shape_predictor_5_face_landmarks.dat") >> sp;
+    dlib::deserialize("../../Face_Alignment/src/shape_predictor_5_face_landmarks.dat") >> sp;
 }
 
 cv::Mat Facealignment::facealignment(cv::Mat img, cv::Rect face) //cambiar return 

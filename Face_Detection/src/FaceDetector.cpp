@@ -9,8 +9,9 @@ using namespace std;
 
 FaceDetector::FaceDetector() {
 	// All classifiers are to be loaded beforehand to avoid delays and performance flaws
-	detector1.load("./lbpcascade_frontalface.xml");
-	ifstream readcascades ("./cascades.txt"); //.txt tiene que estar en build o en donde están tus cascades
+	detector1.load("../../Face_Detection/cascades/lbpcascade_frontalface.xml");
+	
+	ifstream readcascades ("../../Face_Detection/cascades/cascades.txt"); //.txt tiene que estar en build o en donde están tus cascades
 	if(readcascades.is_open())  
 	{
 		while(getline(readcascades,cascade)){ //lee líneas del txt 
