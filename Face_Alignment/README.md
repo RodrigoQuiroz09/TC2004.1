@@ -16,3 +16,5 @@ Following so, the steps to compile and run the module are the following:
 3. cmake ..
 4. cmake — build . —config Release
 5. ./my_project
+
+**IMPORTANT** In order to try our module on MacOS, you need a GUI element. In this case we made us of the XQuartz software, which you can download here: https://www.xquartz.org/ and all you will need to do is follow the steps to install it and restart your computer. 
