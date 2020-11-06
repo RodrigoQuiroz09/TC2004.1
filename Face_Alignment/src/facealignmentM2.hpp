@@ -51,6 +51,6 @@ using anet_type = dlib::loss_metric<dlib::fc_no_bias<128,dlib::avg_pool_everythi
 
     public:
     Facealignment();
-   dlib::matrix<dlib::rgb_pixel> facealignment(cv::Mat img, cv::Rect rect);//return matrix 
+    cv::Mat facealignment(cv::Mat img, cv::Rect rect);//return matrix 
 };
 

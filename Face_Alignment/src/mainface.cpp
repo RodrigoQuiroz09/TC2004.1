@@ -8,10 +8,11 @@ int main(int argc, char** argv)
 	cv::Mat img = cv::imread("/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/Examples/paco1.jpg");
     cv::Rect rect(165, 194, 423, 452); 
     
-    //cv::Mat result=alignment.facealignment(img, rect);
-       dlib::image_window win(alignment.facealignment(img,rect));
-          
-    
+    cv::Mat result=alignment.facealignment(img, rect);
+    //dlib::image_window win(alignment.facealignment(img,rect));
+    //cv::imwrite("/Users/chrisMac/Desktop/", result);
+    cv::imshow("ventana",result);
+    cv::waitKey(0);
     std::cout << "Press enter to close" << std::endl;
     std::cin.get();
     return 0;

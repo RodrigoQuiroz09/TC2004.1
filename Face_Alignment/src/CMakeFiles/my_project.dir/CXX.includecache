@@ -48,34 +48,6 @@ time.h
 dos.h
 -
 
-/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/src/facealignmentM2.cpp
-dlib/dnn.h
--
-dlib/gui_widgets.h
--
-dlib/clustering.h
--
-dlib/string.h
--
-dlib/image_io.h
--
-dlib/image_processing/frontal_face_detector.h
--
-dlib/opencv.h
--
-opencv2/objdetect.hpp
-/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/src/opencv2/objdetect.hpp
-opencv2/highgui.hpp
-/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/src/opencv2/highgui.hpp
-opencv2/imgproc.hpp
-/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/src/opencv2/imgproc.hpp
-opencv2/videoio.hpp
-/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/src/opencv2/videoio.hpp
-iostream
--
-facealignmentM2.hpp
-/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
-
 /Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
 dlib/dnn.h
 -
