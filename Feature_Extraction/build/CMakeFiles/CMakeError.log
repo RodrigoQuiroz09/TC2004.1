@@ -1,0 +1,21 @@
+Determining if the function sgetrf_single exists failed with the following output:
+Change Dir: /Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_c23bd/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_c23bd.dir/build.make CMakeFiles/cmTC_c23bd.dir/build
+gmake[1]: Entering directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c23bd.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgetrf_single -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -o CMakeFiles/cmTC_c23bd.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c23bd
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c23bd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgetrf_single -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c23bd.dir/CheckFunctionExists.c.o -o cmTC_c23bd  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libcblas.tbd 
+Undefined symbols for architecture x86_64:
+  "_sgetrf_single", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_c23bd.dir/build.make:107: cmTC_c23bd] Error 1
+gmake[1]: Leaving directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:140: cmTC_c23bd/fast] Error 2
+
+
+

@@ -11,6 +11,7 @@ endif()
 
 # Set target name, change with your favorite name
 project(my_project)
+include (/Users/chrisMac/Desktop/dlib-19.21/dlib/cmake)
 
 message( STATUS "Build type: ${CMAKE_BUILD_TYPE}" )
 message( STATUS "Configuration types: ${CMAKE_CONFIGURATION_TYPES}" )
@@ -29,14 +30,13 @@ endif()
 # to the absolute path to the directory containing OpenCVConfig.cmake file
 # via the command line or GUI
 
-    set(OpenCV_DIR "/home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4")
-    #set(dlib_DIR "/usr/local/Cellar/dlib/19.21/include/dlib")
+    set(OpenCV_DIR "/Users/chrisMac/opencv/build")
+    #set(dlib_DIR "/Users/chrisMac/Desktop/dlib/19.21/include/dlib")
 
 
 
 #find_package(OpenCV REQUIRED)
-find_package(OpenCV REQUIRED PATHS /home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4)
-message(STATUS "OpenCV library status:")
+find_package(OpenCV REQUIRED PATHS /Users/chrisMac/opencv/build/ NO_DEFAULT_PATH)
 message(STATUS "    config: ${OpenCV_DIR}")
 message(STATUS "    version: ${OpenCV_VERSION}")
 message(STATUS "    libraries: ${OpenCV_LIBS}")
