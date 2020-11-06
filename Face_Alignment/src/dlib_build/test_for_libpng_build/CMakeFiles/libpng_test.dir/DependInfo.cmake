@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/emilioag/Downloads/dlib-19.21/dlib/cmake_utils/test_for_libpng/libpng_test.cpp" "/home/emilioag/Documents/TC2004.1/Face_Alignment/src/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/libpng_test.cpp.o"
+  "/Users/chrisMac/Desktop/dlib-19.21/dlib/cmake_utils/test_for_libpng/libpng_test.cpp" "/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/src/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/libpng_test.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/Library/Frameworks/Mono.framework/Headers"
   )
 
 # Targets to which this target links.
