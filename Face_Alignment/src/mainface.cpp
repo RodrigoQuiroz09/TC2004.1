@@ -5,7 +5,7 @@ int main(int argc, char** argv)
 {
 	Facealignment alignment;
     //nuestros paremetros
-	cv::Mat img = cv::imread("/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Face_Alignment/Examples/paco1.jpg");
+	cv::Mat img = cv::imread("../Examples/paco1.jpg");
     cv::Rect rect(165, 194, 423, 452); 
     
     cv::Mat result=alignment.facealignment(img, rect);

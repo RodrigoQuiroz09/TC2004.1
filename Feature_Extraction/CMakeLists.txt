@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.13)
 # Enable C++11
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
-
+include (/home/emilioag/Downloads/dlib-19.21/dlib/cmake)
 if(NOT CMAKE_BUILD_TYPE AND NOT (MSVC_IDE OR XCODE))
     set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type, one of: Release, Debug" FORCE)
 endif()
