@@ -1,2 +1,0 @@
-../cascades/haarcascade_frontalface_alt.xml
-../cascades/haarcascade_frontalface_alt2.xml
