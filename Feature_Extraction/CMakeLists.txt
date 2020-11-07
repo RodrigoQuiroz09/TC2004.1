@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 3.13)
 # Enable C++11
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+include (/Users/chrisMac/Desktop/dlib-19.21/dlib/cmake)
 
 if(NOT CMAKE_BUILD_TYPE AND NOT (MSVC_IDE OR XCODE))
     set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type, one of: Release, Debug" FORCE)
@@ -11,7 +12,6 @@ endif()
 
 # Set target name, change with your favorite name
 project(my_project)
-include (/Users/chrisMac/Desktop/dlib-19.21/dlib/cmake)
 
 message( STATUS "Build type: ${CMAKE_BUILD_TYPE}" )
 message( STATUS "Configuration types: ${CMAKE_CONFIGURATION_TYPES}" )
