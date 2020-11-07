@@ -217,6 +217,33 @@ home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.s:
 	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
 .PHONY : home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
 
+home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.o: home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+
+.PHONY : home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.o
+
+# target to build an object file
+home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+.PHONY : home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+
+home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.i: home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+
+.PHONY : home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.i
+
+# target to preprocess a source file
+home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+.PHONY : home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+
+home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.s: home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
+
+.PHONY : home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.s
+
+# target to generate assembly for a file
+home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
+.PHONY : home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,6 +263,9 @@ help:
 	@echo "... home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.o"
 	@echo "... home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.i"
 	@echo "... home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.s"
+	@echo "... home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.o"
+	@echo "... home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.i"
+	@echo "... home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.s"
 .PHONY : help
 
 

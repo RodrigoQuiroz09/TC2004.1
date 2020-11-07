@@ -94,12 +94,12 @@ dlib_build/clean: dlib_build/CMakeFiles/dlib.dir/clean
 CMakeFiles/my_project.dir/all: dlib_build/CMakeFiles/dlib.dir/all
 	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/depend
 	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emilioag/Documents/TC2004.1/Face_Recognition/src/CMakeFiles --progress-num=60,61,62,63 "Built target my_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/emilioag/Documents/TC2004.1/Face_Recognition/src/CMakeFiles --progress-num=60,61,62,63,64 "Built target my_project"
 .PHONY : CMakeFiles/my_project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/my_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emilioag/Documents/TC2004.1/Face_Recognition/src/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/emilioag/Documents/TC2004.1/Face_Recognition/src/CMakeFiles 64
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/my_project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/emilioag/Documents/TC2004.1/Face_Recognition/src/CMakeFiles 0
 .PHONY : CMakeFiles/my_project.dir/rule

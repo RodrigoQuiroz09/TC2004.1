@@ -1,5 +1,7 @@
 #include "../../Face_Alignment/src/facealignmentM2.hpp"
 #include "../../Face_Detection/src/FaceDetector.hpp"
+#include "../../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
+#include "../../Feature_Extraction/source/moduleFE.hpp"
 #include <opencv2/opencv.hpp>
 class FaceRecognitionmSystem{
     private:
@@ -7,7 +9,7 @@ class FaceRecognitionmSystem{
     Facealignment facealignment;
     public:
     //add_Person();
-    void personVerification(std::string id)
+    cv::Mat personVerification(std::string id)
     {
 	cv::VideoCapture cap;
 	cv::Mat image;
@@ -26,8 +28,7 @@ class FaceRecognitionmSystem{
 			if (validation)
 			{
 				cv::Mat result=facealignment.facealignment(image, rc);
-                cv::imshow("ventana",result);
-                cv::waitKey(0);
+				return result;
 			}
 			else
 			{
@@ -40,10 +41,37 @@ class FaceRecognitionmSystem{
     //void personIdentification(cv::Mat mat);
 
 };
- int main()
+ int main(int argc, char **argv)
  {
-	 FaceRecognitionmSystem frs;
-	 frs.personVerification("hola");
-	 
-	 return 0;
+	 if (argc != 2)
+    {
+        std::cout << "Run this example by invoking it like this: " << std::endl;
+        std::cout << "   ./my_prject image_path.jpg image_path2.jpg" <<std:: endl;
+        std::cout << std::endl;
+        return 1;
+    }
+    FeatureExtraction F;
+	FaceRecognitionmSystem frs;
+	cv::Mat resultt= frs.personVerification("hola");
+     cv::Mat frame2 = cv::imread(argv[1]);//path
+     cv::Mat vector1 = F.getFeatures(resultt);
+     cv::Mat vector2 = F.getFeatures(frame2);
+    int result = F.comparison(vector1, vector2);
+    Persistence newClient;
+	if(result==1)
+	{
+	newClient.registerClient("A1111111", "MAIKOL", "ITI", "a010516f7@itesm.mx", true, vector1);
+	//newClient.deleteClient("A5");
+	newClient.writeToDisc();
+	}
+   
+
+    // cout << vector1.size << endl;
+    // cout << vector2.size << endl;
+
+    // printf("The result of the module is: %d\n", result);
+    // cout << "M = " << endl
+    //      << " " << vector1 << endl;
+
+    return 0;
  }
