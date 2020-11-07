@@ -8,7 +8,8 @@
 //using namespace cv;
 //using namespace std;
 
-std::string fileName = "clientsInfo.yml";
+//std::string fileName = "clientsInfo.yml";
+std::string fileName = "algo.yml";
 
 class Subject {
 
