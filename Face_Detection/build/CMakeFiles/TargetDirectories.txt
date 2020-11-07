@@ -1,3 +1,0 @@
-/home/emilioag/Documents/TC2004.1/Face_Detection/build/CMakeFiles/rebuild_cache.dir
-/home/emilioag/Documents/TC2004.1/Face_Detection/build/CMakeFiles/edit_cache.dir
-/home/emilioag/Documents/TC2004.1/Face_Detection/build/CMakeFiles/my_project.dir

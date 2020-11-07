@@ -23,7 +23,7 @@ int main(int argc, char **argv)
     cout << "tiempo de feature extraction: " << duration_cast<milliseconds>(duracion).count() << "Milisegundos" << endl;
     Mat vector2 = F.getFeatures(frame2);
     inicio = high_resolution_clock::now();
-    int result = F.comparison(vector1, vector2);
+    int result = F.comparison(vector1, vector2,.15);//.6 es un tamal mike 
     fin = high_resolution_clock::now();
     duracion = fin - inicio;
     cout << "tiempo de comparacion: " << duration_cast<microseconds>(duracion).count() << " Microsegundos" << endl;

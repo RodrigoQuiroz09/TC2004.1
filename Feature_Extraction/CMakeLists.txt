@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.13)
 # Enable C++11
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
-include (/home/emilioag/Downloads/dlib-19.21/dlib/cmake)
+include (/Users/chrisMac/Desktop/dlib-19.21/dlib/cmake)
 if(NOT CMAKE_BUILD_TYPE AND NOT (MSVC_IDE OR XCODE))
     set(CMAKE_BUILD_TYPE Release CACHE STRING "Build type, one of: Release, Debug" FORCE)
 endif()
@@ -29,13 +29,13 @@ endif()
 # to the absolute path to the directory containing OpenCVConfig.cmake file
 # via the command line or GUI
 
-    set(OpenCV_DIR "/home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4")
+    set(OpenCV_DIR "/Users/chrisMac/opencv/build/")
     #set(dlib_DIR "/usr/local/Cellar/dlib/19.21/include/dlib")
 
 
 
 #find_package(OpenCV REQUIRED)
-find_package(OpenCV REQUIRED PATHS /home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4)
+find_package(OpenCV REQUIRED PATHS /Users/chrisMac/opencv/build/)
 message(STATUS "OpenCV library status:")
 message(STATUS "    config: ${OpenCV_DIR}")
 message(STATUS "    version: ${OpenCV_VERSION}")

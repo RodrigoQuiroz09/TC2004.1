@@ -6,7 +6,7 @@ project(my_project)
 
 # enable C++ 11
 set (CMAKE_CXX_STANDARD 11)
-include (/home/emilioag/Downloads/dlib-19.21/dlib/cmake)
+include (/Users/chrisMac/Desktop/dlib-19.21/dlib/cmake)
 
 # Find OpenCV, you may need to set OpenCV_DIR variable
 # to the absolute path to the directory containing OpenCVConfig.cmake file
@@ -14,7 +14,7 @@ include (/home/emilioag/Downloads/dlib-19.21/dlib/cmake)
 
 # if not, use manual specification of the OpenCVConfig.cmake path
 # and comment previous line of automatic finding
-find_package(OpenCV REQUIRED PATHS /home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4 NO_DEFAULT_PATH)  
+find_package(OpenCV REQUIRED PATHS /Users/chrisMac/opencv/build/ NO_DEFAULT_PATH)   
 
 # If the package has been found, several variables will
 # be set, you can find the full list with descriptions
@@ -27,7 +27,7 @@ message(STATUS "    libraries: ${OpenCV_LIBS}")
 message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
 
 # Declare the executable target built from your sources
-add_executable(my_project src/FaceRecognitionSystem.cpp ../../Face_Alignment/src/facealignmentM2.cpp ../../Face_Detection/src/FaceDetector.cpp ../../Feature_Extraction/source/moduleFE.cpp)
+add_executable(my_project FaceRecognitionSystem.cpp ../Face_Alignment/src/facealignmentM2.cpp ../Face_Detection/src/FaceDetector.cpp ../Feature_Extraction/source/moduleFE.cpp)
 
 # Link your application with OpenCV libraries
 target_link_libraries(my_project PRIVATE ${OpenCV_LIBS} dlib::dlib)
