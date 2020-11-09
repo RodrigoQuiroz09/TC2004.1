@@ -1,4 +1,4 @@
-/*#include <opencv2/opencv.hpp>
+#include <opencv2/opencv.hpp>
 #include "PersistenceModule.hpp"
 
 using namespace cv;
@@ -19,4 +19,4 @@ int main() {
 	newClient.writeToDisc();
 	
 	return 0;
-} */
+} 
