@@ -1,4 +1,4 @@
-#include <opencv2/opencv.hpp>
+/*#include <opencv2/opencv.hpp>
 #include "PersistenceModule.hpp"
 
 using namespace cv;
@@ -13,10 +13,10 @@ int main() {
 	cap >> frame;
 
 	//Creates a persistence object, and registers a new client in memory, or delete a client using its key as parameter, and then you write to disk.
-	Persistence newClient;
+	Persistence newClient("clientsInfo.yaml");
 	//newClient.registerClient("A0102777", "Leo", "IMI", "a0102777@itesm.mx", true, frame);
 	newClient.deleteClient("A5");
 	newClient.writeToDisc();
 	
 	return 0;
-}
+} */
