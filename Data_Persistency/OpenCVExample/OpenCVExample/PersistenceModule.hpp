@@ -5,14 +5,7 @@
 #include <map>
 #include <iterator>
 
-//using namespace cv;
-//using namespace std;
-
-std::string fileName = "clientsInfo.yml";
-
 class Subject {
-
-
 public:
 
 	std::string id;
@@ -35,6 +28,7 @@ public:
 
 //Para cargar en memoria:
 class Persistence {
+	std::string fileName = "";
 	std::map<std::string, Subject> users;
 	std::string clientKey = "";
 	std::map<std::string, Subject>::iterator itr;
@@ -66,7 +60,8 @@ private:
 	}
 
 public:
-	Persistence() {
+	Persistence(std::string storageFileName) {
+		fileName = storageFileName;
 		cv::FileStorage fs(fileName, cv::FileStorage::READ);
 		bool searchClients = true;
 		int keyCounter = 0;
@@ -125,5 +120,30 @@ public:
 		}
 
 		fs.release();
+	}
+
+	//GETTERS: Get the atribute searching by key
+	cv::Mat getUserFace(std::string userID) {
+		return users[userID].face;
+	}
+
+	bool getUserIsStudent(std::string userID) {
+		return users[userID].currStudent;
+	}
+
+	std::string getUserEmail(std::string userID) {
+		return users[userID].email;
+	}
+
+	std::string getUserCareer(std::string userID) {
+		return users[userID].career;
+	}
+
+	std::string getUserName(std::string userID) {
+		return users[userID].name;
+	}
+
+	std::string getUserStudentID(std::string userID) {
+		return users[userID].id;
 	}
 };
