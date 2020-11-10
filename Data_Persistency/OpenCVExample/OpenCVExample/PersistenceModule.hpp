@@ -24,6 +24,10 @@ public:
 		currStudent = studentPar;
 		face = facePar;
 	}
+
+	Subject() {
+	
+	}
 };
 
 //Para cargar en memoria:
@@ -73,8 +77,13 @@ public:
 		bool tempStudent = "";
 		cv::Mat tempFace;
 
-		while (searchClients) {
-			trykey = "A" + std::to_string(keyCounter);
+		cv::FileNode fn = fs.root();
+
+		for (cv::FileNodeIterator fit = fn.begin(); fit != fn.end(); ++fit) {
+			//trykey = "A" + std::to_string(keyCounter);
+			
+			cv::FileNode item = *fit;
+			trykey = item.name();
 
 			cv::FileNode fn = fs[trykey];
 			fn["Matricula"] >> tempMatricula;
@@ -145,5 +154,5 @@ public:
 
 	std::string getUserStudentID(std::string userID) {
 		return users[userID].id;
-	}
+	} 
 };
