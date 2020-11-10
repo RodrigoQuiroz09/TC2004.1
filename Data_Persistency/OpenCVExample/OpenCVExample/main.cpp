@@ -6,11 +6,12 @@ using namespace std;
 
 
 //PRESENTATION EXAMPLE:
-int main() {
+int main(int argv, char **args) {
 	//Opens your webcam and stores what it sees in a Mat
 	//VideoCapture cap;
 	//cap.open(0);
-	Mat frame=imread("../../../../Feature_Extraction/Examples/Maikol3.jpeg");
+	//Mat frame=imread("../../../../Feature_Extraction/Examples/Maikol3.jpeg");
+	Mat frame=imread(args[1]);
 	//cap >> frame;
 	puts("hola");
 
@@ -19,6 +20,7 @@ int main() {
 	newClient.registerClient("A1546546", "MAIKOL", "ALGO	", "a010277fff7@itesm.mx", true, frame);
 	//newClient.deleteClient("A5");
 	newClient.writeToDisc();
+	//cout<< newClient.features_vector.size()<<endl;
 	
 	return 0;
 }

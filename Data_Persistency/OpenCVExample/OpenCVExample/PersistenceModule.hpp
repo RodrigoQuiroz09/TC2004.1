@@ -36,7 +36,6 @@ public:
 
 //Para cargar en memoria:
 class Persistence {
-	std::map<std::string, Subject> users;
 	std::string clientKey = "";
 	std::map<std::string, Subject>::iterator itr;
 
@@ -67,7 +66,9 @@ private:
 	}
 
 public:
-	Persistence() {
+	std::map<std::string, Subject> users;
+	cv::Mat features_vector;
+	void loadToMemory(){
 		cv::FileStorage fs(fileName, cv::FileStorage::READ);
 		bool searchClients = true;
 		int keyCounter = 0;
@@ -78,37 +79,58 @@ public:
 		std::string tempEmail = "";
 		bool tempStudent = "";
 		cv::Mat tempFace;
-
 		while (searchClients) {
-			trykey = "A" + std::to_string(keyCounter);
+				trykey = "A" + std::to_string(keyCounter);
 
-			cv::FileNode fn = fs[trykey];
-			fn["Matricula"] >> tempMatricula;
-			fn["Name"] >> tempName;
-			fn["Career"] >> tempCareer;
-			fn["Email"] >> tempEmail;
-			fn["Student"] >> tempStudent;
-			fn["faceMatrix"] >> tempFace;
+				cv::FileNode fn = fs[trykey];
+				fn["Matricula"] >> tempMatricula;
+				fn["Name"] >> tempName;
+				fn["Career"] >> tempCareer;
+				fn["Email"] >> tempEmail;
+				fn["Student"] >> tempStudent;
+				fn["faceMatrix"] >> tempFace;
 
-			Subject tempClient(tempMatricula, tempName, tempCareer, tempEmail, tempStudent, tempFace);
+				Subject tempClient(tempMatricula, tempName, tempCareer, tempEmail, tempStudent, tempFace);
 
-			if (tempMatricula.compare("") != 0) {
-				users.insert(std::pair<std::string, Subject>(trykey, tempClient));
+				if (tempMatricula.compare("") != 0) {
+					users.insert(std::pair<std::string, Subject>(trykey, tempClient));
+					//Mi cosecha
+					if(keyCounter==0){
+						features_vector=tempClient.face;
+					}
+					else{
+						cv::hconcat(features_vector,tempClient.face, features_vector);
+					}
+					
+				}
+				else {
+					searchClients = false;
+				}
+				keyCounter++;
 			}
-			else {
-				searchClients = false;
-			}
-			keyCounter++;
-		}
+		features_vector=features_vector.t();
+
+
+	}
+
+	Persistence() {
+		loadToMemory();
+		//De nuestra cosecha
+		//
 	}
 
 	void registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat) {
 		Subject newRegister(clientId, clientName, clientCareer, clientEmail, clientStudent, faceMat);
 		users.insert(std::pair<std::string, Subject>(generateKey(), newRegister));
+		cv::vconcat(features_vector,faceMat.t(),features_vector);
+		writeToDisc();
+		loadToMemory();
 	}
 
 	void deleteClient(std::string key) {
 		users.erase(key);
+		writeToDisc();
+		loadToMemory();
 	}
 
 	void writeToDisc() {
