@@ -3,13 +3,17 @@
 #include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
 #include "../Feature_Extraction/source/moduleFE.hpp"
 #include <opencv2/opencv.hpp>
+#include <
 class FaceRecognitionmSystem{
     private:
-    FaceDetector facedetector;
-    Facealignment facealignment;
+    FaceDetector faceDetector;
+    Facealignment faceAlignment;
+	FeatureExtraction featureExtraction;
+	FaceRecognitionmSystem faceRecognitionSystem;
     public:
-    //add_Person();
-    cv::Mat personVerification(std::string id)
+    //add_Person(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat);
+	//void registerClient() ---guardar la imagen y el path
+    cv::Mat personVerification(cv::Mat image,std::string id)
     {
 	cv::VideoCapture cap;
 	cv::Mat image;
@@ -40,7 +44,8 @@ class FaceRecognitionmSystem{
     }
 
     }
-    //void personIdentification(cv::Mat mat);
+    //std::vector<std::tuple<cv::Mat,std::string>> personIdentification(cv::Mat mat);
+	//cv::Rect faceRect(cv::Mat mat)
 
 };
  int main(int argc, char **argv)
@@ -52,8 +57,7 @@ class FaceRecognitionmSystem{
         std::cout << std::endl;
         return 1;
     }
-    FeatureExtraction F;
-	FaceRecognitionmSystem frs;
+    
 	cv::Mat resultt= frs.personVerification("hola");
 	cv::Mat result2= frs.personVerification("hola");
     cv::Mat frame2 = cv::imread(argv[1]);//path
