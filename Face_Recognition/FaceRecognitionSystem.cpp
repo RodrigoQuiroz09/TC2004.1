@@ -43,3 +43,4 @@
 		 * Paso 2: regresar el resultado de Paso 1 a GUI para la muestra de caras en pantalla
 		 */
 	}
+	

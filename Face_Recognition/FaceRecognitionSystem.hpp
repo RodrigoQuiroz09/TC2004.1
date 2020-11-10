@@ -13,7 +13,7 @@ class FaceRecognitionSystem{
         Facealignment faceAlignment;
         FeatureExtraction featureExtraction;
         Persistence persistence;
-        
+
     public:
         /* Constructor y Destructor */
         FaceRecognitionSystem();
@@ -46,7 +46,7 @@ class FaceRecognitionSystem{
         * @param image: image to be analyzed
         * @return: rectangle where the face was identified 
         */
-        cv::Rect faceRect(cv::Mat image)
+        cv::Rect faceRect(cv::Mat image);
 
 
-}
+};
