@@ -10,7 +10,7 @@ private:
 public:
     FastSearch()
     {
-        Persistence newClient;
+        //Persistence newClient;
         max_neighbors = 10;
         cv::Mat indices(1, max_neighbors, CV_32S);
         cv::Mat_<float> distances(1, max_neighbors, CV_32S);
@@ -19,7 +19,7 @@ public:
     FastSearch(int max_neighbors)
     {
         cv::flann::GenericIndex<cvflann::L2<float>> index(cv::Mat &matToIndex, const::cvflann::IndexParams &params );
-        Persistence newClient;
+        //Persistence newClient;
         this->max_neighbors = max_neighbors;
         cv::Mat indices(1, max_neighbors, CV_32S);
         cv::Mat_<float> distances(1, max_neighbors, CV_32S);
@@ -32,4 +32,6 @@ public:
     void getMatches();
     cv::Mat search(cv::Mat query);
     cv::Mat allFeatures;
+    cv::Mat getIndices(int max_neighbors=10);
+    cv::Mat getdistances(int max_neighbors=10);
 };
