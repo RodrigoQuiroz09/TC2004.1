@@ -74,12 +74,12 @@ clean: CMakeFiles/my_project.dir/clean
 CMakeFiles/my_project.dir/all:
 	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/depend
 	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rojo/Documentos/Git/TC2004.1/Integration/build/CMakeFiles --progress-num=1,2,3 "Built target my_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rojo/Documentos/Git/TC2004.1/Integration/build/CMakeFiles --progress-num=1,2,3,4 "Built target my_project"
 .PHONY : CMakeFiles/my_project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/my_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rojo/Documentos/Git/TC2004.1/Integration/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rojo/Documentos/Git/TC2004.1/Integration/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/my_project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rojo/Documentos/Git/TC2004.1/Integration/build/CMakeFiles 0
 .PHONY : CMakeFiles/my_project.dir/rule

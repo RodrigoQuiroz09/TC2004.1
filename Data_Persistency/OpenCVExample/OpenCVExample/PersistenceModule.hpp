@@ -4,6 +4,7 @@
 #include <vector>
 #include <map>
 #include <iterator>
+#include <opencv2/flann.hpp>
 
 //using namespace cv;
 //using namespace std;
@@ -41,6 +42,7 @@ class Persistence {
 
 
 private:
+	cv::flann::GenericIndex<cvflann::L2<float>>* matIndex;
 	//Metodo que genera la nueva key, comprobando que no exista:
 	std::string generateKey() {
 		cv::FileStorage savedCounter(fileName, cv::FileStorage::READ);
@@ -61,6 +63,7 @@ private:
 				clientKey = tryKey;
 			}
 			counter++;
+			
 		}
 		return clientKey;
 	}
@@ -115,8 +118,12 @@ public:
 	}
 
 	Persistence() {
-		loadToMemory();
+		//cv::flann::GenericIndex<cvflann::L2<float>>() : g(features_vector,cv::flann::KDTreeIndexParams()){};
+		//matIndex(features_vector,cvflann::KDTreeIndexParams());
+		//matIndex=new matIndex(features_vector,cvflann::KDTreeIndexParams());)
 		//De nuestra cosecha
+		loadToMemory();
+		getIndex();
 		//
 	}
 
@@ -149,10 +156,20 @@ public:
 		fs.release();
 	}
 	void getIndex(){
-		
+		matIndex=new cv::flann::GenericIndex<cvflann::L2<float>>(features_vector,cvflann::KDTreeIndexParams());
 	}
-	void searchIndex(cv::Mat query){
-		
+	void searchIndex(cv::Mat query, cv::Mat indices,cv::Mat distances,int neighbors=10){
+		matIndex->knnSearch(query.t(),indices,distances,neighbors,cvflann::SearchParams());
+		PrintResults(indices,distances);
 
+	}
+	void PrintResults(cv::Mat indices,cv::Mat distances){
+		puts("Los resultados de la busqueda son: ");
+		for (int i = 0; i < indices.cols; i++)
+    {
+        std::string key = "A" + std::to_string(indices.at<int>(i));
+        std::cout << users.find(key)->second.name << " " << users.find(key)->second.id <<" distancia : "<<(distances.at<float>(i))<<std::endl;
+
+    }
 	}
 };

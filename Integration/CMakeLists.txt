@@ -50,7 +50,7 @@ include_directories("${CMAKE_CURRENT_LIST_DIR}")
 macro(add_example name)
     #add_executable(my_project source/featureExtraction_Dlib.cpp)
     #Use line below to try more examples when compiling
-    add_executable(my_project ../../Feature_Extraction/source/moduleFE.cpp main.cpp)  
+    add_executable(my_project ../../Feature_Extraction/source/moduleFE.cpp module.cpp main.cpp )  
     #target_link_libraries(my_project PRIVATE ${OpenCV_LIBS}) 
     target_link_libraries(my_project dlib::dlib ${OpenCV_LIBS})
 endmacro()

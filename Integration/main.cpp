@@ -1,8 +1,6 @@
-
 #include "../Feature_Extraction/source/moduleFE.hpp"
-#include <opencv2/flann.hpp>
 #include "moduleFS.hpp"
-
+#include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
 
 using namespace cv;
 using namespace std;
@@ -12,18 +10,26 @@ int main(int argc, char **argv)
     if (argc != 2)
     {
         cout << "Run this example by invoking it like this: " << endl;
-        cout << "   ./my_prject image_path.jpg image_path2.jpg" << endl;
+        cout << "   ./my_project image_path.jpg" << endl;
         cout << endl;
         return 1;
     }
     FeatureExtraction F;
     Mat frame = imread(argv[1]);
     Mat vector1 = F.getFeatures(frame);
-    cout <<vector1<<endl;
-    Persistence newClient;
-    // FastSearch fast(4);
-    newClient.registerClient("A123456", "KAT", "ITC", "a010516f7@itesm.mx", true, vector1);
-	newClient.writeToDisc();
+    //cout <<vector1<<endl;
+    Persistence Pers;
+    FastSearch fast(5);
+    Pers.getIndex();
+    Pers.searchIndex(vector1,*fast.indices,*fast.distances,fast.max_neighbors);
+
+
+}
+
+
+
+    //printf("%d",fast.distances->at<int>(0));
+    //fast.search(vector1);
 
 
      //cout << newClient.features_vector.size << endl;
@@ -45,6 +51,3 @@ int main(int argc, char **argv)
     //     string key = "A" + std::to_string(indices.at<int>(i));
     //     cout << newClient.users.find(key)->second.name << " " << newClient.users.find(key)->second.id << endl;
     // }
-
-
-}

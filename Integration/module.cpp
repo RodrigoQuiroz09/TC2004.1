@@ -1,6 +1,14 @@
 #include "moduleFS.hpp"
 #include <iostream>
-
+#include <string>
+//#include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
+// void FastSearch::print(Persistence P){
+//         for (int i = 0; i < indices->cols; i++)
+//     {
+//         std::string key = "A" + std::to_string(indices->at<int>(i));
+//         std::cout << P.users.find(key)->second.name << " " << P.users.find(key)->second.id <<std::endl;
+//     }
+// }
 // void FastSearch::loadUsers(std::map<std::string, Subject> users)
 // {
 //     std::map<std::string, Subject>::iterator itr;
@@ -21,10 +29,14 @@
 // }
 
 
-void FastSearch::search(cv::Mat query){
-    P->searchIndex(query,*distances,*indices,max_neighbors);
-    std::cout<<distances->size<<std::endl;
-}
+// void FastSearch::search(cv::Mat query){
+//     P->searchIndex(query,*distances,*indices,max_neighbors);
+//     std::cout<<distances->size<<std::endl;
+// }
+
+
+
+
 // cv::Mat FastSearch::getdistances(int max_neighbors=10){
 //     cv::Mat_<float> distances(1,max_neighbors,CV_32S);
 //     return distances;
