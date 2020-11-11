@@ -6,18 +6,8 @@
 #include <map>
 #include <iterator>
 
-class Subject {
-public:
-
-	std::string id;
-	std::string name;
-	std::string career;
-	std::string email;
-	bool currStudent;
-	cv::Mat face;
-	
-	//Para hacer interfaz:
-	Subject(std::string matriculaPar, std::string namePar, std::string careerPar, std::string emailPar, bool studentPar, cv::Mat facePar) {
+	// Constructor para nuevo cliente, para hacer interfaz
+	Subject::Subject(std::string matriculaPar, std::string namePar, std::string careerPar, std::string emailPar, bool studentPar, cv::Mat facePar) {
 		id = matriculaPar;
 		name = namePar;
 		career = careerPar;
@@ -26,22 +16,13 @@ public:
 		face = facePar;
 	}
 
-	Subject() {
+	// Constructor base
+	Subject::Subject() {
 	
 	}
-};
 
-//Para cargar en memoria:
-class Persistence {
-	std::string fileName = "";
-	std::map<std::string, Subject> users;
-	std::string clientKey = "";
-	std::map<std::string, Subject>::iterator itr;
-
-
-private:
 	//Metodo que genera la nueva key, comprobando que no exista:
-	std::string generateKey() {
+	std::string Persistence::generateKey() {
 		cv::FileStorage savedCounter(fileName, cv::FileStorage::READ);
 		int counter = 0;
 		bool search = true;
@@ -64,8 +45,8 @@ private:
 		return clientKey;
 	}
 
-public:
-	Persistence(std::string storageFileName) {
+	// Constructor del archivo
+	Persistence::Persistence(std::string storageFileName) {
 		fileName = storageFileName;
 		cv::FileStorage fs(fileName, cv::FileStorage::READ);
 		bool searchClients = true;
@@ -106,16 +87,19 @@ public:
 		}
 	}
 
-	void registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat) {
+	// Registrar cliente
+	void Persistence::registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat) {
 		Subject newRegister(clientId, clientName, clientCareer, clientEmail, clientStudent, faceMat);
 		users.insert(std::pair<std::string, Subject>(generateKey(), newRegister));
 	}
 
-	void deleteClient(std::string key) {
+	// Eliminar cliente
+	void Persistence::deleteClient(std::string key) {
 		users.erase(key);
 	}
 
-	void writeToDisc() {
+	// Copiar a memoria
+	void Persistence::writeToDisc() {
 		cv::FileStorage fs(fileName, cv::FileStorage::WRITE);
 
 		for (itr = users.begin(); itr != users.end(); ++itr) {
@@ -133,27 +117,26 @@ public:
 	}
 
 	//GETTERS: Get the atribute searching by key
-	cv::Mat getUserFace(std::string userID) {
+	cv::Mat Persistence::getUserFace(std::string userID) {
 		return users[userID].face;
 	}
 
-	bool getUserIsStudent(std::string userID) {
+	bool Persistence::getUserIsStudent(std::string userID) {
 		return users[userID].currStudent;
 	}
 
-	std::string getUserEmail(std::string userID) {
+	std::string Persistence::getUserEmail(std::string userID) {
 		return users[userID].email;
 	}
 
-	std::string getUserCareer(std::string userID) {
+	std::string Persistence::getUserCareer(std::string userID) {
 		return users[userID].career;
 	}
 
-	std::string getUserName(std::string userID) {
+	std::string Persistence::getUserName(std::string userID) {
 		return users[userID].name;
 	}
 
-	std::string getUserStudentID(std::string userID) {
+	std::string Persistence::getUserStudentID(std::string userID) {
 		return users[userID].id;
-	} 
-};
+	}
