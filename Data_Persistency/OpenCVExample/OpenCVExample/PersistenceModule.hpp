@@ -149,4 +149,7 @@ public:
 
 		fs.release();
 	}
+	void getIndex(){
+		cv::flann::GenericIndex<cvflann::L2<float>> index(features_vector,cvflann::KDTreeIndexParams());
+	}
 };

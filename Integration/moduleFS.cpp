@@ -15,18 +15,18 @@ void FastSearch::loadUsers(std::map<std::string, Subject> users)
 }
 void FastSearch::getIndex(cv::Mat matToIndex)
 {
-    index(matToIndex, cvflann::KDTreeIndexParams());
+    FastSearch::index(matToIndex, cvflann::KDTreeIndexParams());
 }
 cv::Mat FastSearch::search(cv::Mat query)
 {
-    index.knnSearch(query.t(), indices, distances, max_neigh, cvflann::SearchParams());
+    FastSearch::index->knnSearch(query.t(), FastSearch::indices, distances, max_neigh, cvflann::SearchParams());
 }
 
-void FastSearch::getMatches()
-{
-    for (int i = 0; i < indices.size(); i++)
-    {
-        key = "A" + std::to_string(indices.at<int>(i);
-        cout << newClient.users.find(key)->second.name << " " << newClient.users.find(key)->second.id << endl;
-    }
-}
+// void FastSearch::getMatches()
+// {
+//     for (int i = 0; i < indices.size(); i++)
+//     {
+//         key = "A" + std::to_string(indices.at<int>(i);
+//         cout << newClient.users.find(key)->second.name << " " << newClient.users.find(key)->second.id << endl;
+//     }
+// }

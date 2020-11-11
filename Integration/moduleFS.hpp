@@ -5,7 +5,7 @@
 class FastSearch
 {
 private:
-    cv::flann::GenericIndex<cvflann::L2<float>> index(cv::Mat &matToIndex, cvflann::KDTreeIndexParams());
+    
 
 public:
     FastSearch()
@@ -18,10 +18,12 @@ public:
 
     FastSearch(int max_neighbors)
     {
+        cv::flann::GenericIndex<cvflann::L2<float>> index(cv::Mat &matToIndex, const::cvflann::IndexParams &params );
         Persistence newClient;
         this->max_neighbors = max_neighbors;
         cv::Mat indices(1, max_neighbors, CV_32S);
         cv::Mat_<float> distances(1, max_neighbors, CV_32S);
+
     }
     int max_neighbors;
     std::string key;
