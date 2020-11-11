@@ -1,6 +1,6 @@
 #include "../Face_Alignment/src/facealignmentM2.hpp"
 #include "../Face_Detection/src/FaceDetector.hpp"
-#include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
+//#include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
 #include "../Feature_Extraction/source/moduleFE.hpp"
 #include <opencv2/opencv.hpp>
 #include <vector>
@@ -12,7 +12,7 @@ class FaceRecognitionSystem{
         FaceDetector faceDetector;
         Facealignment faceAlignment;
         FeatureExtraction featureExtraction;
-        Persistence persistence;
+        //Persistence persistence;
 
     public:
         /* Constructor y Destructor */
