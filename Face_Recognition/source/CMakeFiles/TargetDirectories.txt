@@ -1,6 +1,0 @@
-/home/emilioag/Documents/TC2004.1/Face_Recognition/src/CMakeFiles/rebuild_cache.dir
-/home/emilioag/Documents/TC2004.1/Face_Recognition/src/CMakeFiles/edit_cache.dir
-/home/emilioag/Documents/TC2004.1/Face_Recognition/src/CMakeFiles/my_project.dir
-/home/emilioag/Documents/TC2004.1/Face_Recognition/src/dlib_build/CMakeFiles/edit_cache.dir
-/home/emilioag/Documents/TC2004.1/Face_Recognition/src/dlib_build/CMakeFiles/rebuild_cache.dir
-/home/emilioag/Documents/TC2004.1/Face_Recognition/src/dlib_build/CMakeFiles/dlib.dir
