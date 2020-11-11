@@ -4,7 +4,7 @@
 		faceDetector=FaceDetector();
         faceAlignment=Facealignment();
         featureExtraction=FeatureExtraction();
-		//persistence=Persistence();
+		persistence=Persistence("Elpatitofeo.txt");
 
 	}
 	FaceRecognitionSystem::~FaceRecognitionSystem(){}
