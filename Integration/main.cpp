@@ -1,7 +1,7 @@
-#include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
-#include "../Feature_Extraction/source/moduleFE.hpp"
 
+#include "../Feature_Extraction/source/moduleFE.hpp"
 #include <opencv2/flann.hpp>
+#include "moduleFS.hpp"
 
 
 using namespace cv;
@@ -9,7 +9,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    if (argc != 3)
+    if (argc != 2)
     {
         cout << "Run this example by invoking it like this: " << endl;
         cout << "   ./my_prject image_path.jpg image_path2.jpg" << endl;
@@ -18,41 +18,33 @@ int main(int argc, char **argv)
     }
     FeatureExtraction F;
     Mat frame = imread(argv[1]);
-    Mat frame2 = imread(argv[2]);
     Mat vector1 = F.getFeatures(frame);
-    Mat vector2 = F.getFeatures(frame2);
-   // int result = F.comparison(vector1, vector2);
+    cout <<vector1<<endl;
     Persistence newClient;
-    //newClient.registerClient("A6666666", "MAIKOLKORS", "ITC", "a010516f7@itesm.mx", true, vector1);
-	//newClient.deleteClient("A1");
-	//newClient.writeToDisc();
-    //Mat fin=vector1;
-    //hconcat(vector1, vector2, fin);
-    //fin.push_back(vector2);
+    // FastSearch fast(4);
+    newClient.registerClient("A123456", "KAT", "ITC", "a010516f7@itesm.mx", true, vector1);
+	newClient.writeToDisc();
 
 
-     cout << newClient.features_vector.size << endl;
-     //cout << vector1 << endl;
+     //cout << newClient.features_vector.size << endl;
 
-    // printf("The result of the module is: %d\n", result);
-    // cout << "M = " << endl
-    //      << " " << vector1 << endl;
-    cv::Mat query;
-    //newClient.features_vector.convertTo(query,CV_8U);
-    cv::flann::GenericIndex<cvflann::L2<float>> index(newClient.features_vector,cvflann::KDTreeIndexParams());
-    int max_neigh=4;
-    Mat indices(1,max_neigh,CV_32S);
-    // cout<<"hasta aqui todo bien :) "<<indices.size<<endl;
-    //Mat indices, distances;
-    Mat_<float> distances(1,max_neigh);
+    // cv::flann::GenericIndex<cvflann::L2<float>> index(newClient.features_vector,cvflann::KDTreeIndexParams());
+    // Mat indices(1,fast.max_neighbors,CV_32S);
+    // // cout<<"hasta aqui todo bien :) "<<indices.size<<endl;
+    // //Mat indices, distances;
+    // Mat_<float> distances(1,fast.max_neighbors);
 
-    index.knnSearch(vector1.t(),indices,distances,max_neigh,cvflann::SearchParams());
-    cout<<indices.size<<endl;
-    cout<<indices<<endl;
-    cout<<distances<<endl;
-    cout<<indices.at<int>(0)<<endl;
-    string key="A"+to_string(indices.at<int>(0));
-    cout<<newClient.users.find(key)->second.name<<" "<<newClient.users.find(key)->second.id<<endl;
+    // index.knnSearch(vector1.t(),indices,distances,fast.max_neighbors,cvflann::SearchParams());
+    // cout<<indices.size<<endl;
+    // cout<<indices<<endl;
+    // cout<<distances<<endl;
+    // cout<<indices.at<int>(0)<<endl;
+    // puts("La imagen ingresada coincide con: ");
+    // for (int i = 0; i < indices.cols; i++)
+    // {
+    //     string key = "A" + std::to_string(indices.at<int>(i));
+    //     cout << newClient.users.find(key)->second.name << " " << newClient.users.find(key)->second.id << endl;
+    // }
 
 
 }

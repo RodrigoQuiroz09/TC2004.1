@@ -120,6 +120,7 @@ CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/s
 CMakeFiles/my_project.dir/main.cpp.o: /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 CMakeFiles/my_project.dir/main.cpp.o: /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 CMakeFiles/my_project.dir/main.cpp.o: ../main.cpp
+CMakeFiles/my_project.dir/main.cpp.o: ../moduleFS.hpp
 CMakeFiles/my_project.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/calib3d.hpp
 CMakeFiles/my_project.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/core.hpp
 CMakeFiles/my_project.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/core/affine.hpp

@@ -66,6 +66,7 @@ private:
 	}
 
 public:
+	
 	std::map<std::string, Subject> users;
 	cv::Mat features_vector;
 	void loadToMemory(){
@@ -123,13 +124,11 @@ public:
 		Subject newRegister(clientId, clientName, clientCareer, clientEmail, clientStudent, faceMat);
 		users.insert(std::pair<std::string, Subject>(generateKey(), newRegister));
 		cv::vconcat(features_vector,faceMat.t(),features_vector);
-		writeToDisc();
 		loadToMemory();
 	}
 
 	void deleteClient(std::string key) {
 		users.erase(key);
-		writeToDisc();
 		loadToMemory();
 	}
 
@@ -150,6 +149,10 @@ public:
 		fs.release();
 	}
 	void getIndex(){
-		cv::flann::GenericIndex<cvflann::L2<float>> index(features_vector,cvflann::KDTreeIndexParams());
+		
+	}
+	void searchIndex(cv::Mat query){
+		
+
 	}
 };
