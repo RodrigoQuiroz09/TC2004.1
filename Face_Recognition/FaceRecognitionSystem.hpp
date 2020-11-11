@@ -34,7 +34,7 @@ class FaceRecognitionSystem{
         * @param id: the id that belongs to the person in the image
         * @return: the person in the image is indeed the id holder or not 
         */
-        bool personVerification(cv::Mat image,std::string id);
+        bool personVerification(cv::Mat image2,std::string id);
 
         /* Method that looks for a number of 10 people with similar characteristics to the one in the image.
         * @param mat: image that contains the person to be identied
