@@ -19,6 +19,7 @@ public:
 	/*	Default constructor of a Face Detector
 	 */
 	FaceDetector();
+	FaceDetector(std::string cascadePath, std::string cascadeText);
 
 	/* Method that validates the Mat object which contains or not a face
 	 * @param image: image to be validated

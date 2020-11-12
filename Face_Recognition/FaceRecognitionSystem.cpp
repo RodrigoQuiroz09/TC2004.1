@@ -4,8 +4,7 @@
 		faceDetector=FaceDetector();
         faceAlignment=Facealignment();
         featureExtraction=FeatureExtraction();
-		persistence=Persistence("Elpatitofeo.txt");
-
+		persistence=Persistence("prueba.yml");
 	}
 	FaceRecognitionSystem::~FaceRecognitionSystem(){}
 
@@ -16,13 +15,14 @@
 		 */
 	}
 
-	bool FaceRecognitionSystem::personVerification(cv::Mat image,std::string id){
-		/* Paso 1: el image se obtiene de un capture en el main de la GUI y este
+	std::tuple<Subject,bool> FaceRecognitionSystem::personVerification(cv::Mat image,std::string id){
+		/* 
+		 * Paso 1: el image se obtiene de un capture en el main de la GUI y este
 		 * Paso 2: envio de la imagen a FaceDetector 
 		 * Paso 3: envio del rectangulo a FaceAllignment 
 		 * Paso 4: envio de la matriz resultante de FaceAllignment a FastSearch(modulo Rojo)
 		 * Paso 5: envio del resultado de FastSearch a Verification (1 contra 1, modulo Sibaja)
-		 * Paso 6: se regresa resultado del paso 5
+		 * Paso 6: se regresa una instancia de la clase Subject y si es un match 
 		 * * El resultado de Paso 6 debe ajustarse a la interfaz de personVerification
 		 */
 	}
