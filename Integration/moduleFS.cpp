@@ -21,10 +21,10 @@
 // }
 
 
-void FastSearch::search(cv::Mat query){
-    P->searchIndex(query,*distances,*indices,max_neighbors);
-    std::cout<<distances->size<<std::endl;
-}
+// void FastSearch::search(cv::Mat query){
+//     P->searchIndex(query,*distances,*indices,max_neighbors);
+//     std::cout<<distances->size<<std::endl;
+// }
 // cv::Mat FastSearch::getdistances(int max_neighbors=10){
 //     cv::Mat_<float> distances(1,max_neighbors,CV_32S);
 //     return distances;
