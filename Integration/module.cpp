@@ -50,3 +50,14 @@
 //         cout << newClient.users.find(key)->second.name << " " << newClient.users.find(key)->second.id << endl;
 //     }
 // }
+FastSearch::FastSearch(){
+    max_neighbors = 10;
+    indices=new cv::Mat(1, max_neighbors, CV_32S);
+    distances=new cv::Mat_<float>(1, max_neighbors, CV_32S);
+}
+
+FastSearch::FastSearch(int neighbors=10){
+    neighbors = max_neighbors;
+    indices=new cv::Mat(1, max_neighbors, CV_32S);
+    distances=new cv::Mat_<float>(1, max_neighbors, CV_32S);
+}

@@ -42,7 +42,7 @@ class Persistence {
 
 
 private:
-	cv::flann::GenericIndex<cvflann::L2<float>>* matIndex;
+	cv::flann::GenericIndex<cvflann::L2<float>>* matIndex; //Index sin su constructor
 	//Metodo que genera la nueva key, comprobando que no exista:
 	std::string generateKey() {
 		cv::FileStorage savedCounter(fileName, cv::FileStorage::READ);
@@ -123,7 +123,7 @@ public:
 		//matIndex=new matIndex(features_vector,cvflann::KDTreeIndexParams());)
 		//De nuestra cosecha
 		loadToMemory();
-		getIndex();
+		getIndex();//Determina el index del MAT de todas la features
 		//
 	}
 

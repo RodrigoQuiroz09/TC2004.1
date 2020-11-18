@@ -19,12 +19,21 @@ int main(int argc, char **argv)
     Mat vector1 = F.getFeatures(frame);
     //cout <<vector1<<endl;
     Persistence Pers;
-    FastSearch fast(5);
+    FastSearch fast;
     Pers.getIndex();
     Pers.searchIndex(vector1,*fast.indices,*fast.distances,fast.max_neighbors);
+    return 0;
 
 
 }
+
+
+
+
+
+
+
+
 
 
 
