@@ -79,12 +79,22 @@
 
 			if (tempMatricula.compare("") != 0) {
 				users.insert(std::pair<std::string, Subject>(trykey, tempClient));
+				if(searchClients){
+					features_vector=tempClient.face;
+					searchClients=false;
+				}
+				else{
+					cv::hconcat(features_vector,tempClient.face,features_vector);
+				}
 			}
 			else {
 				searchClients = false;
 			}
 			keyCounter++;
 		}
+		puts("Creada");
+		features_vector=features_vector.t();
+		
 	}
 
 	// Registrar cliente
@@ -139,4 +149,8 @@
 
 	std::string Persistence::getUserStudentID(std::string userID) {
 		return users[userID].id;
+	}
+	cv::flann::GenericIndex<cvflann::L2<float>> Persistence::getGenericIndex(){
+		matIndex=new cv::flann::GenericIndex<cvflann::L2<float>>(features_vector,cvflann::KDTreeIndexParams());
+		return *matIndex;
 	}

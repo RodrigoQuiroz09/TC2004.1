@@ -22,6 +22,9 @@ class Persistence {
 
 private:
 	std::string generateKey();
+	cv::flann::GenericIndex<cvflann::L2<float>>* matIndex;
+	cv::Mat features_vector;
+	
 
 public:
     Persistence(std::string storageFileName);
@@ -44,4 +47,7 @@ public:
 	std::string getUserName(std::string userID);
 
 	std::string getUserStudentID(std::string userID);
+	
+	cv::flann::GenericIndex<cvflann::L2<float>> getGenericIndex();
+	
 };
