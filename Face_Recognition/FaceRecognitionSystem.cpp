@@ -1,19 +1,23 @@
 #include "FaceRecognitionSystem.hpp"
+//#include "moduleFS.hpp"
 
 	FaceRecognitionSystem::FaceRecognitionSystem(){
 		faceDetector=FaceDetector();
         faceAlignment=Facealignment();
         featureExtraction=FeatureExtraction();
-		persistence=Persistence("Elpatitofeo.yml");
+		persistence=Persistence("prueba.yml");
 
 	}
 	FaceRecognitionSystem::~FaceRecognitionSystem(){}
 
-	void FaceRecognitionSystem::addPerson(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat){
-		cv::Mat prueba=cv::imread("/Users/Hayoung/code/opencv-cpp-template/Faces/ana4.jpg");
+	void FaceRecognitionSystem::addPerson(std::string clientId, std::string clientName, std::string clientCareer, 
+	std::string clientEmail, bool clientStudent, cv::Mat faceMat){
+		//cv::Rect rcprueba;
+		cv::Mat prueba=cv::imread("/Users/Hayoung/code/opencv-cpp-template/Faces/ro.jpg");
+		//cv::Mat alignprueba=faceAlignment.facealignment(prueba, rcprueba);
 		cv::Mat vectorprueba=featureExtraction.getFeatures(prueba);
 		persistence.registerClient(clientId, clientName, clientCareer, clientEmail, clientStudent, vectorprueba);
-		std::cout<<persistence.getUserName("A01026744")<<std::endl;
+		persistence.writeToDisc();
 		/* Paso 1: usar el metodo registerClient de la clase Persistence 
 		 * * Modificar para que guarde información de 128 características, en vez de la matriz de información de los pixeles 
 		 * * Guardar la imagen que se obtenga y almacenar en el path en el .yml 
@@ -38,14 +42,16 @@
 
 		cv::Mat alignimage=faceAlignment.facealignment(image2, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);
-		cv::imshow("chris",alignimage);
+		cv::imshow("hello",alignimage);
 		cv::waitKey(0);
 
 		cv::Mat image1=cv::imread("/Users/Hayoung/code/opencv-cpp-template/Faces/ana4.jpg");
 		cv::Mat vector1=featureExtraction.getFeatures(image1);
+			
+		int result = featureExtraction.comparison(vector1, persistence.getUserFace("A3"), .6);
+		//int result = featureExtraction.comparison(vector, vector1, .15);
 
-		//int result = featureExtraction.comparison(vector, persistence.getUserFace(id), .15);
-		int result = featureExtraction.comparison(vector, vector1, .15);
+		std::cout<<persistence.getUserName("A1")<<std::endl;
 
 		if(result==1)
 		{
@@ -66,7 +72,29 @@
 		 */
 	}
 
-	std::vector<std::tuple<cv::Mat,std::string>> FaceRecognitionSystem::personIdentification(cv::Mat mat){
+	bool FaceRecognitionSystem::personIdentification(cv::Mat mat){
+		//FastSearch fast;
+		cv::Rect rc;
+		bool validation;
+		rc = faceDetector.detectFace(&mat);
+		if(!rc.empty())
+		{
+			validation = faceDetector.faceValidation(&mat, rc);
+			if(validation==false)
+			{
+				std::cout << "NO hay una cara " << std::endl;
+				return true;
+			}
+		} else {
+			return true;
+		}
+
+		cv::Mat alignimage=faceAlignment.facealignment(mat, rc);
+		cv::Mat vector=featureExtraction.getFeatures(alignimage);	
+
+		//cv::Mat resultados=fast.searchIndex(persistence,vector);
+
+		//return resultados;		
 		/* Paso 1: el image se obtiene de un capture en el main de la GUI y este
 		 * Paso 2: envio de la imagen a FaceDetector 
 		 * Paso 3: envio del rectangulo a FaceAllignment 
