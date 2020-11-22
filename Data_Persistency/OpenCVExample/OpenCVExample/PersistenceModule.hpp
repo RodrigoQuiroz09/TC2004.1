@@ -34,6 +34,7 @@ public:
 	void deleteClient(std::string key);
 
 	void writeToDisc();
+	void print();
 
 	//GETTERS: Get the atribute searching by key
 	cv::Mat getUserFace(std::string userID);

@@ -10,19 +10,13 @@
 opencv2/opencv.hpp
 -
 
-/home/rojo/Documentos/Git/TC2004.1/FastSearch/main.cpp
-../Feature_Extraction/source/moduleFE.hpp
-/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
-moduleFS.hpp
-/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
-
-/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
+/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/main.cpp
 opencv2/opencv.hpp
 -
-opencv2/flann.hpp
--
-../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+PersistenceModule.hpp
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+../../../Feature_Extraction/source/moduleFE.hpp
+/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 
 /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 dlib/dnn.h

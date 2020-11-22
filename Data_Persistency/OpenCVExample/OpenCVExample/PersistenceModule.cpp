@@ -6,6 +6,7 @@
 #include <map>
 #include <iterator>
 
+#include <unistd.h>
 	// Constructor para nuevo cliente, para hacer interfaz
 	Subject::Subject(std::string matriculaPar, std::string namePar, std::string careerPar, std::string emailPar, bool studentPar, cv::Mat facePar) {
 		id = matriculaPar;
@@ -57,12 +58,13 @@
 		std::string tempCareer;
 		std::string tempEmail = "";
 		bool tempStudent = "";
-		cv::Mat tempFace;
+		
 
 		cv::FileNode fn = fs.root();
 
 		for (cv::FileNodeIterator fit = fn.begin(); fit != fn.end(); ++fit) {
 			//trykey = "A" + std::to_string(keyCounter);
+			cv::Mat tempFace;
 			
 			cv::FileNode item = *fit;
 			trykey = item.name();
@@ -73,12 +75,20 @@
 			fn["Career"] >> tempCareer;
 			fn["Email"] >> tempEmail;
 			fn["Student"] >> tempStudent;
+				// 	puts("antesd facema");
+				// print();
 			fn["faceMatrix"] >> tempFace;
+				// 	puts("despues de facema");
+				// print();
+			//std::cout<<"\n la cara"<<tempFace<<"\n";
 
 			Subject tempClient(tempMatricula, tempName, tempCareer, tempEmail, tempStudent, tempFace);
 
+
 			if (tempMatricula.compare("") != 0) {
 				users.insert(std::pair<std::string, Subject>(trykey, tempClient));
+				puts("Luego de guardar");
+				print();
 				if(searchClients){
 					features_vector=tempClient.face;
 					searchClients=false;
@@ -91,7 +101,9 @@
 				searchClients = false;
 			}
 			keyCounter++;
+			//print();
 		}
+		fs.release();
 		puts("Creada");
 		features_vector=features_vector.t();
 		
@@ -111,7 +123,7 @@
 	// Copiar a memoria
 	void Persistence::writeToDisc() {
 		cv::FileStorage fs(fileName, cv::FileStorage::WRITE);
-
+		int cont =0;
 		for (itr = users.begin(); itr != users.end(); ++itr) {
 			fs << itr->first << "{";
 			fs << "Matricula" << itr->second.id;
@@ -124,6 +136,11 @@
 		}
 
 		fs.release();
+	}
+	void Persistence:: print(){
+		for(std::map<std::string, Subject>::const_iterator cont =users.begin();cont!=users.end();++cont){
+			std::cout<<"\n" <<cont->first<<" "<<cont->second.face<<"\n";
+		}
 	}
 
 	//GETTERS: Get the atribute searching by key

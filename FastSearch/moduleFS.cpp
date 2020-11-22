@@ -1,6 +1,5 @@
 #include "moduleFS.hpp"
 #include <iostream>
-
 FastSearch::FastSearch(){
 max_neighbors = 10;
 indices=new cv::Mat(1, max_neighbors, CV_32S);
