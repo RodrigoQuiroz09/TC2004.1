@@ -8,10 +8,11 @@ public:
 	std::string email;
 	bool currStudent;
 	cv::Mat face;
-	
+	std::string pfp;
+
 	Subject();
 
-    Subject(std::string matriculaPar, std::string namePar, std::string careerPar, std::string emailPar, bool studentPar, cv::Mat facePar);
+	Subject(std::string matriculaPar, std::string namePar, std::string careerPar, std::string emailPar, bool studentPar, cv::Mat facePar, std::string pfpPar);
 };
 
 class Persistence {
@@ -24,16 +25,17 @@ private:
 	std::string generateKey();
 	cv::flann::GenericIndex<cvflann::L2<float>>* matIndex;
 	cv::Mat features_vector;
-	
+
 
 public:
-    Persistence(std::string storageFileName);
+	Persistence(std::string storageFileName);
 
-	void registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat);
+	void registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat, std::string clientPfp);
 
 	void deleteClient(std::string key);
 
 	void writeToDisc();
+	void print();
 
 	//GETTERS: Get the atribute searching by key
 	cv::Mat getUserFace(std::string userID);
@@ -47,7 +49,9 @@ public:
 	std::string getUserName(std::string userID);
 
 	std::string getUserStudentID(std::string userID);
-	
+
+	std::string getUserPfp(std::string userID);
+
 	cv::flann::GenericIndex<cvflann::L2<float>> getGenericIndex();
-	
+
 };
