@@ -6,7 +6,7 @@
 		faceDetector=FaceDetector();
         faceAlignment=Facealignment();
         featureExtraction=FeatureExtraction();
-		persistence=Persistence("prueba.yml");
+		persistence=new Persistence("algo.yml");
 
 	}
 	FaceRecognitionSystem::~FaceRecognitionSystem(){}
@@ -17,8 +17,8 @@
 		cv::Mat prueba=cv::imread("/Users/Hayoung/code/opencv-cpp-template/Faces/ro.jpg");
 		//cv::Mat alignprueba=faceAlignment.facealignment(prueba, rcprueba);
 		cv::Mat vectorprueba=featureExtraction.getFeatures(prueba);
-		persistence.registerClient(clientId, clientName, clientCareer, clientEmail, clientStudent, vectorprueba, pfp);
-		persistence.writeToDisc();
+		persistence->registerClient(clientId, clientName, clientCareer, clientEmail, clientStudent, vectorprueba, pfp);
+		persistence->writeToDisc();
 		/* Paso 1: usar el metodo registerClient de la clase Persistence 
 		 * * Modificar para que guarde información de 128 características, en vez de la matriz de información de los pixeles 
 		 * * Guardar la imagen que se obtenga y almacenar en el path en el .yml 
@@ -49,10 +49,10 @@
 		cv::Mat image1=cv::imread("/Users/Hayoung/code/opencv-cpp-template/Faces/ana4.jpg");
 		cv::Mat vector1=featureExtraction.getFeatures(image1);
 			
-		int result = featureExtraction.comparison(vector1, persistence.getUserFace("A3"), .6);
+		int result = featureExtraction.comparison(vector1, persistence->getUserFace("A0"), .6);
 		//int result = featureExtraction.comparison(vector, vector1, .15);
 
-		std::cout<<persistence.getUserName("A1")<<std::endl;
+		std::cout<<persistence->getUserName("A1")<<std::endl;
 
 		if(result==1)
 		{
@@ -74,7 +74,7 @@
 	}
 
 	bool FaceRecognitionSystem::personIdentification(cv::Mat mat){
-		//FastSearch fast;
+		FastSearch fast;
 		cv::Rect rc;
 		bool validation;
 		rc = faceDetector.detectFace(&mat);
@@ -93,7 +93,9 @@
 		cv::Mat alignimage=faceAlignment.facealignment(mat, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);	
 
-		//cv::Mat resultados=fast.searchIndex(persistence,vector);
+		cv::Mat resultados=fast.searchIndex(*persistence,vector);
+
+		return false;
 
 		//return resultados;		
 		/* Paso 1: el image se obtiene de un capture en el main de la GUI y este

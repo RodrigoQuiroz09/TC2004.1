@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Hayoung/Documents/TC2004.1_V2/Face_Recognition/build/dlib_build/test_for_libpng_build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/build/dlib_build/test_for_libpng_build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

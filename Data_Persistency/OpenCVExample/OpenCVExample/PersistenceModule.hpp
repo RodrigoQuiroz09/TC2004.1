@@ -1,5 +1,5 @@
+#pragma once
 #include <opencv2/opencv.hpp>
-//#pragma once
 
 class Subject {
 public:

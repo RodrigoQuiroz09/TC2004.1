@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Hayoung/Downloads/dlib-19.21/dlib/cmake_utils/test_for_libpng/libpng_test.cpp" "/Users/Hayoung/Documents/TC2004.1_V2/Face_Recognition/build/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/libpng_test.cpp.o"
+  "/Users/Hayoung/Downloads/dlib-19.21/dlib/cmake_utils/test_for_libpng/libpng_test.cpp" "/Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/build/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/libpng_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

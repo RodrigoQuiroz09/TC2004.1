@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/Hayoung/Downloads/dlib-19.21/dlib/cmake_utils/test_for_cpp11")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/Hayoung/Documents/TC2004.1_V2/Face_Recognition/build/dlib_build/cpp11_test_build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)
