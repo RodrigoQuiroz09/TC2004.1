@@ -1,4 +1,5 @@
 #include "FaceRecognitionSystem.hpp"
+//#include <vector>
 //#include "../FastSearch/moduleFS.hpp"
 //#include "moduleFS.hpp"
 
@@ -25,7 +26,7 @@
 		 */
 	}
 
-	bool FaceRecognitionSystem::personVerification(cv::Mat image2,std::string id){
+	void FaceRecognitionSystem::personVerification(cv::Mat image2,std::string id){
 		cv::Rect rc;
 		bool validation;
 		rc = faceDetector.detectFace(&image2);
@@ -35,10 +36,10 @@
 			if(validation==false)
 			{
 				std::cout << "NO hay una cara " << std::endl;
-				return true;
+				//return true;
 			}
 		} else {
-			return true;
+			//return true;
 		}
 
 		cv::Mat alignimage=faceAlignment.facealignment(image2, rc);
@@ -61,7 +62,7 @@
 			std::cout<<"IMPOSTOR"<<std::endl;
 		}
 
-		return false;
+		//return false;
 
 		/* Paso 1: el image se obtiene de un capture en el main de la GUI y este
 		 * Paso 2: envio de la imagen a FaceDetector 
@@ -73,7 +74,8 @@
 		 */
 	}
 
-	bool FaceRecognitionSystem::personIdentification(cv::Mat mat){
+	//std::vector<std::tuple<std::string,std::string>> FaceRecognitionSystem::personIdentification(cv::Mat mat){
+	std::vector<std::tuple<std::string,std::string>> FaceRecognitionSystem::personIdentification(cv::Mat mat){
 		FastSearch fast;
 		cv::Rect rc;
 		bool validation;
@@ -84,10 +86,10 @@
 			if(validation==false)
 			{
 				std::cout << "NO hay una cara " << std::endl;
-				return true;
+				//return true;
 			}
 		} else {
-			return true;
+			//return true;
 		}
 
 		cv::Mat alignimage=faceAlignment.facealignment(mat, rc);
@@ -95,17 +97,20 @@
 
 		cv::Mat resultados=fast.searchIndex(*persistence,vector);
 
-		return false;
+		std::vector<std::tuple<std::string,std::string>> data;
+		std::tuple<std::string,std::string> info;
 
-		//return resultados;		
-		/* Paso 1: el image se obtiene de un capture en el main de la GUI y este
-		 * Paso 2: envio de la imagen a FaceDetector 
-		 * Paso 3: envio del rectangulo a FaceAllignment 
-		 * Paso 4: envio de la matriz resultante de FaceAllignment a FastSearch(modulo Rojo)
-		 * Paso 5: envio del resultado de FastSearch a Verification (1 contra varios, modulo Sibaja)
-		 * Paso 6: se regresa resultado del paso 5
-		 * * El resultado de Paso 6 debe ajustarse a la interfaz de personIdentification
-		 */
+		for(int i=0; i<resultados.cols;i++){
+			std::string key = "A" + std::to_string(resultados.at<int>(i)); 
+			std::string id = persistence->getUserStudentID(key);
+			std::string photo = persistence->getUserPfp(key);
+			//std::cout<<photo<<std::endl;
+			info = std::make_tuple(id, photo);
+			data.push_back(info);
+		}
+
+		return data;
+
 	}
 
 	cv::Rect FaceRecognitionSystem::faceRect(cv::Mat mat){

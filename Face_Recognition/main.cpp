@@ -11,7 +11,11 @@ int main(){
     while (flag)
 		{
 			cap >> image;
-      flag=faceRecognitionSystem.personIdentification(image);
+      std::vector<std::tuple<std::string,std::string>> personData = faceRecognitionSystem.personIdentification(image);
+      for(int i = 0; i<personData.size();i++){
+        std::cout<<std::get<0>(personData.at(i)) << std::get<1>(personData.at(i))<< std::endl;
+      }
+      break;
     }
     return 0;
 }
