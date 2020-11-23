@@ -1,7 +1,8 @@
 #include "../Face_Alignment/src/facealignmentM2.hpp"
 #include "../Face_Detection/src/FaceDetector.hpp"
-#include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
+//#include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
 #include "../Feature_Extraction/source/moduleFE.hpp"
+#include "../FastSearch/moduleFS.hpp"
 #include <opencv2/opencv.hpp>
 #include <vector>
 #include <tuple>
@@ -27,7 +28,7 @@ class FaceRecognitionSystem{
         * @param clientStudent: if the person is a student or not
         * @param faceMat: image of the person 
         */
-        void addPerson(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat);
+        void addPerson(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat, std::string pfp);
 
         /* Method that verifies if the ID holder is present in the image
         * @param image:image to be verified 

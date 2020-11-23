@@ -1,4 +1,5 @@
 #include "FaceRecognitionSystem.hpp"
+//#include "../FastSearch/moduleFS.hpp"
 //#include "moduleFS.hpp"
 
 	FaceRecognitionSystem::FaceRecognitionSystem(){
@@ -11,12 +12,12 @@
 	FaceRecognitionSystem::~FaceRecognitionSystem(){}
 
 	void FaceRecognitionSystem::addPerson(std::string clientId, std::string clientName, std::string clientCareer, 
-	std::string clientEmail, bool clientStudent, cv::Mat faceMat){
+	std::string clientEmail, bool clientStudent, cv::Mat faceMat, std::string pfp){
 		//cv::Rect rcprueba;
 		cv::Mat prueba=cv::imread("/Users/Hayoung/code/opencv-cpp-template/Faces/ro.jpg");
 		//cv::Mat alignprueba=faceAlignment.facealignment(prueba, rcprueba);
 		cv::Mat vectorprueba=featureExtraction.getFeatures(prueba);
-		persistence.registerClient(clientId, clientName, clientCareer, clientEmail, clientStudent, vectorprueba);
+		persistence.registerClient(clientId, clientName, clientCareer, clientEmail, clientStudent, vectorprueba, pfp);
 		persistence.writeToDisc();
 		/* Paso 1: usar el metodo registerClient de la clase Persistence 
 		 * * Modificar para que guarde información de 128 características, en vez de la matriz de información de los pixeles 
