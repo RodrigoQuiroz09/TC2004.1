@@ -51,7 +51,7 @@
 //     }
 // }
 FastSearch::FastSearch(){
-    max_neighbors = 10;
+    max_neighbors = 9;
     indices=new cv::Mat(1, max_neighbors, CV_32S);
     distances=new cv::Mat_<float>(1, max_neighbors, CV_32S);
 }

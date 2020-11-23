@@ -11,6 +11,6 @@ public:
     cv::Mat *indices;
     cv::Mat *distances;
     int max_neighbors;
-    void searchIndex(Persistence persistence,cv::Mat query);
+    cv::Mat searchIndex(Persistence persistence,cv::Mat query);
     void printResults(Persistence persistance);
 };
