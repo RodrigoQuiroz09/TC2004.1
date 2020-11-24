@@ -87,8 +87,6 @@
 
 			if (tempMatricula.compare("") != 0) {
 				users.insert(std::pair<std::string, Subject>(trykey, tempClient));
-				puts("Luego de guardar");
-				print();
 				if(searchClients){
 					features_vector=tempClient.face;
 					searchClients=false;

@@ -4,13 +4,13 @@
 class FastSearch
 {
 private:
+    cv::Mat *indices;
+    cv::Mat *distances;
+    int max_neighbors;
 
 public:
     FastSearch();
     FastSearch(int max_neighbors);
-    cv::Mat *indices;
-    cv::Mat *distances;
-    int max_neighbors;
     cv::Mat searchIndex(Persistence persistence,cv::Mat query);
     void printResults(Persistence persistance);
 };
