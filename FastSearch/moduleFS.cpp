@@ -1,5 +1,6 @@
 #include "moduleFS.hpp"
 #include <iostream>
+
 FastSearch::FastSearch()
 {
     FastSearch(10);
