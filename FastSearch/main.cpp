@@ -16,13 +16,9 @@ int main(int argc, char **argv)
     FeatureExtraction F;
     Mat frame = imread(argv[1]);
     Mat vector1 = F.getFeatures(frame);
-    //cout <<vector1<<endl;
     Persistence Pers("algo.yml");
     FastSearch fast;
-    fast.searchIndex(Pers,vector1);
+    fast.searchIndex(Pers, vector1);
     fast.printResults(Pers);
-    // Pers.getIndex();
-    // Pers.searchIndex(vector1,*fast.indices,*fast.distances,fast.max_neighbors);
     return 0;
-
 }
