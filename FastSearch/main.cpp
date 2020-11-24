@@ -1,5 +1,6 @@
 #include "../Feature_Extraction/source/moduleFE.hpp"
 #include "moduleFS.hpp"
+#include "/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
 
 using namespace cv;
 using namespace std;
@@ -17,8 +18,6 @@ int main(int argc, char **argv)
     Mat frame = imread(argv[1]);
     Mat vector1 = F.getFeatures(frame);
     Persistence Pers("algo.yml");
-    FastSearch fast;
-    fast.searchIndex(Pers, vector1);
-    fast.printResults(Pers);
+    Pers.printQueryResults(Pers.searchMat(vector1));
     return 0;
 }

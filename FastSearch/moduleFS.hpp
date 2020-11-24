@@ -3,7 +3,6 @@
 
 #include <opencv2/opencv.hpp>
 #include <opencv2/flann.hpp>
-#include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
 class FastSearch
 {
 private:
@@ -14,8 +13,7 @@ private:
 public:
     FastSearch();
     FastSearch(int max_neighbors);
-    cv::Mat searchIndex(Persistence persistence, cv::Mat query);
-    void printResults(Persistence persistance);
+    cv::Mat searchIndex(cv::flann::GenericIndex<cvflann::L2<float>>* matIndex, cv::Mat query);
 };
 
 #endif
