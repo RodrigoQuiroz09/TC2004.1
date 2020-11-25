@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/Hayoung/Downloads/dlib-19.21/dlib/cmake_utils/test_for_libpng")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/build/dlib_build/test_for_libpng_build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/build/dlib_build/test_for_libpng_build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

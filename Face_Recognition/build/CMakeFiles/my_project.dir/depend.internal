@@ -6,13 +6,13 @@ CMakeFiles/my_project.dir/FaceRecognitionSystem.cpp.o
  /Library/Frameworks/Mono.framework/Headers/jpeglib.h
  /Library/Frameworks/Mono.framework/Headers/png.h
  /Library/Frameworks/Mono.framework/Headers/pngconf.h
- /Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Detection/src/FaceDetector.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/FaceRecognitionSystem.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/FastSearch/moduleFS.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Feature_Extraction/source/moduleFE.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Detection/src/FaceDetector.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/FaceRecognitionSystem.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/FastSearch/moduleFS.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Feature_Extraction/source/moduleFE.hpp
  /Users/Hayoung/Downloads/dlib-19.21/dlib/algs.h
  /Users/Hayoung/Downloads/dlib-19.21/dlib/any.h
  /Users/Hayoung/Downloads/dlib-19.21/dlib/any/any.h
@@ -866,9 +866,10 @@ CMakeFiles/my_project.dir/FaceRecognitionSystem.cpp.o
  /Users/Hayoung/opencv/modules/video/include/opencv2/video/background_segm.hpp
  /Users/Hayoung/opencv/modules/video/include/opencv2/video/tracking.hpp
  /Users/Hayoung/opencv/modules/videoio/include/opencv2/videoio.hpp
-CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
- /Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+CMakeFiles/my_project.dir/Users/Hayoung/Documents/Github/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
+ /Users/Hayoung/Documents/Github/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/FastSearch/moduleFS.hpp
  /Users/Hayoung/opencv/build/cv_cpu_config.h
  /Users/Hayoung/opencv/build/cvconfig.h
  /Users/Hayoung/opencv/build/opencv2/opencv_modules.hpp
@@ -972,13 +973,13 @@ CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persisten
  /Users/Hayoung/opencv/modules/video/include/opencv2/video/background_segm.hpp
  /Users/Hayoung/opencv/modules/video/include/opencv2/video/tracking.hpp
  /Users/Hayoung/opencv/modules/videoio/include/opencv2/videoio.hpp
-CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
+CMakeFiles/my_project.dir/Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
  /Library/Frameworks/Mono.framework/Headers/gif_lib.h
  /Library/Frameworks/Mono.framework/Headers/jpeglib.h
  /Library/Frameworks/Mono.framework/Headers/png.h
  /Library/Frameworks/Mono.framework/Headers/pngconf.h
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/facealignmentM2.cpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/facealignmentM2.cpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
  /Users/Hayoung/Downloads/dlib-19.21/dlib/algs.h
  /Users/Hayoung/Downloads/dlib-19.21/dlib/any.h
  /Users/Hayoung/Downloads/dlib-19.21/dlib/any/any.h
@@ -1769,9 +1770,9 @@ CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment
  /Users/Hayoung/opencv/modules/objdetect/include/opencv2/objdetect.hpp
  /Users/Hayoung/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp
  /Users/Hayoung/opencv/modules/videoio/include/opencv2/videoio.hpp
-CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Detection/src/FaceDetector.cpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Detection/src/FaceDetector.hpp
+CMakeFiles/my_project.dir/Users/Hayoung/Documents/Github/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Detection/src/FaceDetector.cpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Detection/src/FaceDetector.hpp
  /Users/Hayoung/opencv/build/cv_cpu_config.h
  /Users/Hayoung/opencv/build/cvconfig.h
  /Users/Hayoung/opencv/build/opencv2/opencv_modules.hpp
@@ -1875,10 +1876,9 @@ CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Detection
  /Users/Hayoung/opencv/modules/video/include/opencv2/video/background_segm.hpp
  /Users/Hayoung/opencv/modules/video/include/opencv2/video/tracking.hpp
  /Users/Hayoung/opencv/modules/videoio/include/opencv2/videoio.hpp
-CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/FastSearch/moduleFS.cpp.o
- /Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/FastSearch/moduleFS.cpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/FastSearch/moduleFS.hpp
+CMakeFiles/my_project.dir/Users/Hayoung/Documents/Github/TC2004.1/FastSearch/moduleFS.cpp.o
+ /Users/Hayoung/Documents/Github/TC2004.1/FastSearch/moduleFS.cpp
+ /Users/Hayoung/Documents/Github/TC2004.1/FastSearch/moduleFS.hpp
  /Users/Hayoung/opencv/build/cv_cpu_config.h
  /Users/Hayoung/opencv/build/cvconfig.h
  /Users/Hayoung/opencv/build/opencv2/opencv_modules.hpp
@@ -1982,9 +1982,9 @@ CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/FastSearch/mod
  /Users/Hayoung/opencv/modules/video/include/opencv2/video/background_segm.hpp
  /Users/Hayoung/opencv/modules/video/include/opencv2/video/tracking.hpp
  /Users/Hayoung/opencv/modules/videoio/include/opencv2/videoio.hpp
-CMakeFiles/my_project.dir/Users/Hayoung/Documents/GitHub/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
- /Users/Hayoung/Documents/GitHub/TC2004.1/Feature_Extraction/source/moduleFE.cpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Feature_Extraction/source/moduleFE.hpp
+CMakeFiles/my_project.dir/Users/Hayoung/Documents/Github/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+ /Users/Hayoung/Documents/Github/TC2004.1/Feature_Extraction/source/moduleFE.cpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Feature_Extraction/source/moduleFE.hpp
  /Users/Hayoung/Downloads/dlib-19.21/dlib/algs.h
  /Users/Hayoung/Downloads/dlib-19.21/dlib/any.h
  /Users/Hayoung/Downloads/dlib-19.21/dlib/any/any.h
@@ -2750,13 +2750,13 @@ CMakeFiles/my_project.dir/main.cpp.o
  /Library/Frameworks/Mono.framework/Headers/jpeglib.h
  /Library/Frameworks/Mono.framework/Headers/png.h
  /Library/Frameworks/Mono.framework/Headers/pngconf.h
- /Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Detection/src/FaceDetector.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/FaceRecognitionSystem.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/main.cpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/FastSearch/moduleFS.hpp
- /Users/Hayoung/Documents/GitHub/TC2004.1/Feature_Extraction/source/moduleFE.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Detection/src/FaceDetector.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/FaceRecognitionSystem.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/main.cpp
+ /Users/Hayoung/Documents/Github/TC2004.1/FastSearch/moduleFS.hpp
+ /Users/Hayoung/Documents/Github/TC2004.1/Feature_Extraction/source/moduleFE.hpp
  /Users/Hayoung/Downloads/dlib-19.21/dlib/algs.h
  /Users/Hayoung/Downloads/dlib-19.21/dlib/any.h
  /Users/Hayoung/Downloads/dlib-19.21/dlib/any/any.h
