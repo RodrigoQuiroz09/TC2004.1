@@ -104,7 +104,6 @@ Rect FaceDetector::detectFace(Mat *image)
 		{
 			aux = rc.width;
 			aux2 = rc.height;
-
 			area=rc;
 		}
 	}

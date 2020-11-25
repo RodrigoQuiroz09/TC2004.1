@@ -38,9 +38,12 @@
 		 */
 	}
 
-	cv::Rect FaceRecognitionSystem::faceRect(cv::Mat mat){
+	cv::Rect FaceRecognitionSystem::faceRect(cv::Mat *mat){
 		/* Paso 1: enviar la imagen a FaceDetector::multiScale
 		 * Paso 2: regresar el resultado de Paso 1 a GUI para la muestra de caras en pantalla
 		 */
+		cv::Rect results = faceDetector.detectFace(mat);
+		return results;
 	}
+
 	

@@ -27,7 +27,7 @@ if(!rc.empty())
 validation = facedetector.faceValidation(&image, rc);
 if (validation)
 {
-cv::Mat result=facealignment.facealignment(image, rc);
+cvz=facealignment.facealignment(image, rc);
 cv::imshow("chris",result);
 cv::waitKey(0);
 return result;
