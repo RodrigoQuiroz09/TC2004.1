@@ -48,11 +48,11 @@ time.h
 dos.h
 -
 
-/Users/Hayoung/Documents/Github/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 opencv2/opencv.hpp
 -
 
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
 dlib/dnn.h
 -
 dlib/gui_widgets.h
@@ -68,35 +68,35 @@ dlib/image_processing/frontal_face_detector.h
 dlib/opencv.h
 -
 opencv2/objdetect.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/opencv2/objdetect.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/opencv2/objdetect.hpp
 opencv2/highgui.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/opencv2/highgui.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/opencv2/highgui.hpp
 opencv2/imgproc.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/opencv2/imgproc.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/opencv2/imgproc.hpp
 opencv2/videoio.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/opencv2/videoio.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/opencv2/videoio.hpp
 iostream
 -
 
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Detection/src/FaceDetector.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Detection/src/FaceDetector.hpp
 opencv2/opencv.hpp
 -
 
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp
 FaceRecognitionSystem.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/FaceRecognitionSystem.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/FaceRecognitionSystem.hpp
 
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/FaceRecognitionSystem.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/FaceRecognitionSystem.hpp
 ../Face_Alignment/src/facealignmentM2.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Alignment/src/facealignmentM2.hpp
 ../Face_Detection/src/FaceDetector.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Face_Detection/src/FaceDetector.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Face_Detection/src/FaceDetector.hpp
 ../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 ../Feature_Extraction/source/moduleFE.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Feature_Extraction/source/moduleFE.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 ../FastSearch/moduleFS.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/FastSearch/moduleFS.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/FastSearch/moduleFS.hpp
 opencv2/opencv.hpp
 -
 vector
@@ -104,15 +104,17 @@ vector
 tuple
 -
 
-/Users/Hayoung/Documents/Github/TC2004.1/FastSearch/moduleFS.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/FastSearch/moduleFS.hpp
+opencv2/flann.hpp
+-
+../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 opencv2/opencv.hpp
 -
 opencv2/flann.hpp
 -
-../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
-/Users/Hayoung/Documents/Github/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 
-/Users/Hayoung/Documents/Github/TC2004.1/Feature_Extraction/source/moduleFE.hpp
+/Users/Hayoung/Documents/GitHub/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 dlib/dnn.h
 -
 dlib/string.h

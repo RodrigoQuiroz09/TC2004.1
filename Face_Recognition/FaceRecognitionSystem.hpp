@@ -36,7 +36,7 @@ class FaceRecognitionSystem{
         * @return: the person in the image is indeed the id holder or not 
         */
         //std::tuple<Subject,bool> personVerification(cv::Mat image2,std::string id);
-        void personVerification(cv::Mat image2,std::string id);
+        std::tuple<Subject,bool> personVerification(cv::Mat image2,std::string id);
         /* Method that looks for a number of 10 people with similar characteristics to the one in the image.
         * @param mat: image that contains the person to be identied
         * @return:vector of a maximum number of 10 people with similar characteristics to the one in the image and their ID
