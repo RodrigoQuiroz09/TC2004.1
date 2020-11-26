@@ -9,7 +9,11 @@
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp
 opencv2/opencv.hpp
 -
+<<<<<<< HEAD
 ./PersistenceModule.hpp
+=======
+PersistenceModule.hpp
+>>>>>>> FastSearch2Version
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 iostream
 -
@@ -25,12 +29,22 @@ iterator
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 opencv2/opencv.hpp
 -
+<<<<<<< HEAD
+=======
+../../../FastSearch/moduleFS.hpp
+/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
+>>>>>>> FastSearch2Version
 
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/main.cpp
 ../Feature_Extraction/source/moduleFE.hpp
 /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 moduleFS.hpp
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
+<<<<<<< HEAD
+=======
+/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+-
+>>>>>>> FastSearch2Version
 
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp
 moduleFS.hpp
@@ -43,8 +57,11 @@ opencv2/opencv.hpp
 -
 opencv2/flann.hpp
 -
+<<<<<<< HEAD
 ../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+=======
+>>>>>>> FastSearch2Version
 
 /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 dlib/dnn.h

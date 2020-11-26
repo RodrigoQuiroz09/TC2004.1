@@ -9,8 +9,8 @@
 
 FeatureExtraction::FeatureExtraction()
 {
-    dlib::deserialize("../source/dlib_face_recognition_resnet_model_v1.dat") >> net;
-    //float threshold = .6;
+    dlib::deserialize("/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/dlib_face_recognition_resnet_model_v1.dat") >> net;
+    // float threshold = .6;
 }
 
 /* Mat getFeatures: detects image, divides it and stores it into a Mat. It also asks the DNN to convert each face image in faces into a 128D vector.

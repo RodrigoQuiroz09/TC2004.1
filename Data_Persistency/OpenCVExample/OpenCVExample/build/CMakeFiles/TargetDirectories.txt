@@ -1,0 +1,3 @@
+/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/build/CMakeFiles/rebuild_cache.dir
+/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/build/CMakeFiles/edit_cache.dir
+/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/build/CMakeFiles/my_project.dir
