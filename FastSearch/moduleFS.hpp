@@ -9,6 +9,7 @@ private:
     cv::Mat *indices;
     cv::Mat *distances;
     int max_neighbors;
+    cv::flann::GenericIndex<cvflann::L2<float>>* matIndex;
 
 public:
     /*FastSearch: constructor, it inizializes the indices and set a default int max_neighbors
@@ -28,7 +29,15 @@ public:
     *@param Mat query, mat to search in the index above
     *@return mat *indices (close)
     */
-    cv::Mat searchIndex(cv::flann::GenericIndex<cvflann::L2<float>>* matIndex, cv::Mat query);
+    cv::Mat searchIndex(cv::Mat query);
+
+    /* void searchIndex: Creates a flann Generic Index of a cv::Mat
+    *@param matToIndex: Mat that is going to be indexed
+    *@return nonthing
+    */
+    void crearIndice(cv::Mat matToIndex){
+        matIndex = new cv::flann::GenericIndex<cvflann::L2<float>>(matToIndex, cvflann::KDTreeIndexParams());
+    }
 };
 
 #endif

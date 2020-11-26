@@ -49,7 +49,8 @@ std::string Persistence::generateKey() {
 	return clientKey;
 }
 void Persistence::getGenericIndex() {
-	matIndex = new cv::flann::GenericIndex<cvflann::L2<float>>(features_vector, cvflann::KDTreeIndexParams());
+	// 
+	fast->crearIndice(features_vector);
 }
 
 // Constructor del archivo
@@ -151,7 +152,7 @@ void Persistence::printQueryResults(cv::Mat indices){
 	}
 }
 cv::Mat Persistence::searchMat(cv::Mat query){
-	return fast->searchIndex(matIndex,query);
+	return fast->searchIndex(query);
 }
 
 //GETTERS: Get the atribute searching by key

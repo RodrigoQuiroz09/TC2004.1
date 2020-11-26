@@ -14,7 +14,7 @@ FastSearch::FastSearch(int neighbors)
 }
 
 
-cv::Mat FastSearch::searchIndex(cv::flann::GenericIndex<cvflann::L2<float>>* matIndex, cv::Mat query)
+cv::Mat FastSearch::searchIndex(cv::Mat query)
 {
     matIndex->knnSearch(query.t(), *indices, *distances, max_neighbors, cvflann::SearchParams());
     return *indices;

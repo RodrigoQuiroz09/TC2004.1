@@ -25,7 +25,7 @@ class Persistence {
 private:
 	
 	std::string generateKey();
-	cv::flann::GenericIndex<cvflann::L2<float>>* matIndex;
+	// cv::flann::GenericIndex<cvflann::L2<float>>* matIndex;
 	cv::Mat features_vector;
 	FastSearch *fast;
 	Persistence();

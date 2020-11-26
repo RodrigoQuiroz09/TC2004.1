@@ -28,10 +28,34 @@ opencv2/opencv.hpp
 ../../../FastSearch/moduleFS.hpp
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
 
+/home/rojo/Documentos/Git/TC2004.1/FastSearch/main.cpp
+../Feature_Extraction/source/moduleFE.hpp
+/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
+moduleFS.hpp
+/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
+/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
+-
+
+/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp
+moduleFS.hpp
+/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
+iostream
+-
+
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
 opencv2/opencv.hpp
 -
 opencv2/flann.hpp
+-
+
+/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
+dlib/dnn.h
+-
+dlib/string.h
+-
+dlib/opencv.h
+-
+opencv2/opencv.hpp
 -
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
