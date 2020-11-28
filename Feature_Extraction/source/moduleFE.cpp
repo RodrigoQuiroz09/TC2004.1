@@ -9,7 +9,7 @@
 
 FeatureExtraction::FeatureExtraction()
 {
-    dlib::deserialize("/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/dlib_face_recognition_resnet_model_v1.dat") >> net;
+    dlib::deserialize("/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/dlib_face_recognition_resnet_model_v1.dat") >> net;
     // float threshold = .6;
 }
 

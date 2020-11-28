@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_DEPRECATE
 #define CVUI_IMPLEMENTATION
 #include <opencv2/opencv.hpp>
-#include "FaceRecognitionSystem.hpp"
+#include "../Face_Recognition/FaceRecognitionSystem.hpp"
 #include "GUI.hpp"
 #include "cvui.h" 
 #define WINDOW_NAME "Face Recognition System"
@@ -24,7 +24,7 @@ void Gui::startGUI() {
 
 	//Read and resize image:
 	cv::Mat imagen = cv::imread("lena.jpg");
-	cv::Mat cross = cv::imread("cross.png");
+	cv::Mat cross = cv::imread("test.jpg");
 	cv::Mat IMG1, crossImage, imgCloseMatch;
 	cv::Mat userCapture, userCapShow;
 	cv::Size size(175, 150); //Tamaño de la imagen cuando se verifica
@@ -62,20 +62,48 @@ void Gui::startGUI() {
 		// ----------------------HomeScreen----------------------------------------------------------------
 		if (showHomeScreen) {
 			if ((cvui::button(frame, 400, 425, "Verificar")) || cv::waitKey(1) == 118) { //Tecla "v"
+				cv::Mat show;
+				do
+				{   //facedetector.
+					cap >> userCapture;
+					cvui::rect(frame, 0, 0, 200, 900, 0xF2F7FB);
+					cv::resize(userCapture, cameraShow, cameraSize);
+					cvui::image(frame, 300, 50, cameraShow);
+					cvui::update();
+					cv::imshow(WINDOW_NAME, frame);
+				}while(!frs.faceRect(userCapture));
 				showHomeScreen = false;
 				detect121 = true;
-				cap >> userCapture;
 				userKey = keyboard;
 				funcCount = 0;
 			}
 			else if ((cvui::button(frame, 600, 425, "Identificar")) || cv::waitKey(1) == 105) { //Tecla "i"
+				cv::Mat show;
+				do
+				{   //facedetector.
+					cap >> userCapture;
+					cvui::rect(frame, 0, 0, 200, 900, 0xF2F7FB);
+					cv::resize(userCapture, cameraShow, cameraSize);
+					cvui::image(frame, 300, 50, cameraShow);
+					cvui::update();
+					cv::imshow(WINDOW_NAME, frame);
+				}while(!frs.faceRect(userCapture));
 				showHomeScreen = false;
 				detect12N = true;
-				cap >> userCapture;
 				userKey = keyboard;
 				funcCount = 0;
 			}
 			else if (cvui::button(frame, 10, 20, "Registrar Usuario")) {
+				cv::Mat show;
+				do
+				{   //facedetector.
+					cap >> userCapture;
+					cvui::rect(frame, 0, 0, 200, 900, 0xF2F7FB);
+					cv::resize(userCapture, show, cameraSize);
+					cvui::image(frame, 300, 50, show);
+					cvui::update();
+					cv::imshow(WINDOW_NAME, frame);
+				}while(!frs.faceRect(userCapture));
 				showHomeScreen = false;
 				newUserScreen = true;
 				cap >> userCapture;
@@ -118,6 +146,7 @@ void Gui::startGUI() {
 			}
 
 			cvui::rect(frame, 0, 0, 200, 900, 0xF2F7FB);
+
 			cvui::image(frame, 300, 50, cameraShow);
 
 			cvui::text(frame, 60, 425, keyboard);
@@ -174,6 +203,7 @@ void Gui::startGUI() {
 			if (cvui::button(frame, 10, 425, "Regresar")) {
 				showHomeScreen = true;
 				newUserScreen = false;
+				//bandera
 			}
 		}
 		// ----------------------Screen para usuario aceptado 1:N------------------------------------------
@@ -194,6 +224,11 @@ void Gui::startGUI() {
 			if (funcCount == 0) {
 				userIdenti = frs.personIdentification(userCapture);
 				funcCount++;
+			}
+
+			for(int i=0;i<9;++i)
+			{
+				
 			}
 
 			veriPic = cv::imread(std::get<1>(userIdenti.at(0)));

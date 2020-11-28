@@ -59,7 +59,6 @@
 		cv::Mat alignimage=faceAlignment.facealignment(mat, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);	
 		cv::Mat resultados=persistence->searchMat(vector);
-
 		std::vector<std::tuple<std::string,std::string>> data;
 		std::tuple<std::string,std::string> info;
 
@@ -73,9 +72,17 @@
 		return data;
 	}
 
-	cv::Rect FaceRecognitionSystem::faceRect(cv::Mat mat){
+	bool FaceRecognitionSystem::faceRect(cv::Mat mat){
 		/* Paso 1: enviar la imagen a FaceDetector::multiScale
 		 * Paso 2: regresar el resultado de Paso 1 a GUI para la muestra de caras en pantalla
 		 */
+		cv::Rect rc;
+		rc = faceDetector.detectFace(&mat);
+		if(!rc.empty())
+		{
+			return faceDetector.faceValidation(&mat, rc);
+		
+		}
+		return false;
 	}
 	

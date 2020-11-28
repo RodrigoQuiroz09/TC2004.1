@@ -49,7 +49,7 @@ class FaceRecognitionSystem{
         * @param image: image to be analyzed
         * @return: rectangle where the face was identified 
         */
-        cv::Rect faceRect(cv::Mat image);
+       bool faceRect(cv::Mat image);
 
 };
 
