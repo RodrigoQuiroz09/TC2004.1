@@ -225,16 +225,10 @@ void Gui::startGUI() {
 				userIdenti = frs.personIdentification(userCapture);
 				funcCount++;
 			}
-
-			for(int i=0;i<9;++i)
-			{
-				
-			}
-
 			veriPic = cv::imread(std::get<1>(userIdenti.at(0)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 300, 100, veriPicShow);
-			cvui::printf(frame, 300, 180, 0.4, 0xF2F7FB, "Nombre");
+			cvui::printf(frame, 300, 180, 0.4, 0xF2F7FB, "ELBUENO");
 			cvui::text(frame, 300, 200, std::get<0>(userIdenti.at(0)));
 
 			veriPic = cv::imread(std::get<1>(userIdenti.at(1)));

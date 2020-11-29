@@ -21,6 +21,7 @@ class Persistence {
 	std::map<std::string, Subject> users;
 	std::string clientKey = "";
 	std::map<std::string, Subject>::iterator itr;
+	int keyCont;
 
 private:
 	

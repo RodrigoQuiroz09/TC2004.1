@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emilioag/Documents/TC2004.1/GUIElements
+CMAKE_SOURCE_DIR = /home/rojo/Documentos/Git/TC2004.1/GUIElements
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emilioag/Documents/TC2004.1/GUIElements/build
+CMAKE_BINARY_DIR = /home/rojo/Documentos/Git/TC2004.1/GUIElements/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/my_project.dir/depend.make
@@ -59,187 +59,183 @@ include CMakeFiles/my_project.dir/flags.make
 
 CMakeFiles/my_project.dir/main.cpp.o: CMakeFiles/my_project.dir/flags.make
 CMakeFiles/my_project.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_project.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/main.cpp.o -c /home/emilioag/Documents/TC2004.1/GUIElements/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_project.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/main.cpp.o -c /home/rojo/Documentos/Git/TC2004.1/GUIElements/main.cpp
 
 CMakeFiles/my_project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilioag/Documents/TC2004.1/GUIElements/main.cpp > CMakeFiles/my_project.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rojo/Documentos/Git/TC2004.1/GUIElements/main.cpp > CMakeFiles/my_project.dir/main.cpp.i
 
 CMakeFiles/my_project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilioag/Documents/TC2004.1/GUIElements/main.cpp -o CMakeFiles/my_project.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rojo/Documentos/Git/TC2004.1/GUIElements/main.cpp -o CMakeFiles/my_project.dir/main.cpp.s
 
 CMakeFiles/my_project.dir/GUI.cpp.o: CMakeFiles/my_project.dir/flags.make
 CMakeFiles/my_project.dir/GUI.cpp.o: ../GUI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_project.dir/GUI.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/GUI.cpp.o -c /home/emilioag/Documents/TC2004.1/GUIElements/GUI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_project.dir/GUI.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/GUI.cpp.o -c /home/rojo/Documentos/Git/TC2004.1/GUIElements/GUI.cpp
 
 CMakeFiles/my_project.dir/GUI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/GUI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilioag/Documents/TC2004.1/GUIElements/GUI.cpp > CMakeFiles/my_project.dir/GUI.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rojo/Documentos/Git/TC2004.1/GUIElements/GUI.cpp > CMakeFiles/my_project.dir/GUI.cpp.i
 
 CMakeFiles/my_project.dir/GUI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/GUI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilioag/Documents/TC2004.1/GUIElements/GUI.cpp -o CMakeFiles/my_project.dir/GUI.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rojo/Documentos/Git/TC2004.1/GUIElements/GUI.cpp -o CMakeFiles/my_project.dir/GUI.cpp.s
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o: CMakeFiles/my_project.dir/flags.make
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o: /home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o -c /home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o: /home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o -c /home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp > CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp > CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o: CMakeFiles/my_project.dir/flags.make
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o: /home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o -c /home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o: /home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o -c /home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp > CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp > CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.o: CMakeFiles/my_project.dir/flags.make
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.o: /home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.o -c /home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o: /home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o -c /home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp > CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.i
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp > CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.i
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o: CMakeFiles/my_project.dir/flags.make
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o: /home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o -c /home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o: /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o -c /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp > CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp > CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o: CMakeFiles/my_project.dir/flags.make
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o: /home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o -c /home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o: /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o -c /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp > CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp > CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.o: CMakeFiles/my_project.dir/flags.make
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.o: /home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.o -c /home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o: /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o -c /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp > CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.i
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp > CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.i
 
-CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp -o CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.s
+CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp -o CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.s
 
 # Object files for target my_project
 my_project_OBJECTS = \
 "CMakeFiles/my_project.dir/main.cpp.o" \
 "CMakeFiles/my_project.dir/GUI.cpp.o" \
-"CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o" \
-"CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o" \
-"CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.o" \
-"CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o" \
-"CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o" \
-"CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.o"
+"CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o" \
+"CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o" \
+"CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o" \
+"CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o" \
+"CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o" \
+"CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o"
 
 # External object files for target my_project
 my_project_EXTERNAL_OBJECTS =
 
 my_project: CMakeFiles/my_project.dir/main.cpp.o
 my_project: CMakeFiles/my_project.dir/GUI.cpp.o
-my_project: CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o
-my_project: CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
-my_project: CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
-my_project: CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
-my_project: CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
-my_project: CMakeFiles/my_project.dir/home/emilioag/Documents/TC2004.1/FastSearch/moduleFS.cpp.o
+my_project: CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o
+my_project: CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
+my_project: CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
+my_project: CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+my_project: CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
+my_project: CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o
 my_project: CMakeFiles/my_project.dir/build.make
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_gapi.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_stitching.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_alphamat.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_aruco.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_bgsegm.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_bioinspired.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_ccalib.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_cvv.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_dnn_objdetect.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_dnn_superres.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_dpm.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_face.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_freetype.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_fuzzy.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_hdf.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_hfs.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_img_hash.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_intensity_transform.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_line_descriptor.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_mcc.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_quality.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_rapid.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_reg.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_rgbd.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_saliency.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_sfm.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_stereo.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_structured_light.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_superres.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_surface_matching.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_tracking.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_videostab.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_xfeatures2d.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_xobjdetect.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_xphoto.so.4.5.0
-my_project: dlib_build/libdlib.a
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_highgui.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_shape.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_datasets.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_plot.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_text.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_dnn.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_ml.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_phase_unwrapping.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_optflow.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_ximgproc.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_video.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_videoio.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_imgcodecs.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_objdetect.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_calib3d.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_features2d.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_flann.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_photo.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_imgproc.so.4.5.0
-my_project: /home/emilioag/Desktop/installation/OpenCV-master/lib/libopencv_core.so.4.5.0
+my_project: /usr/local/lib/libopencv_gapi.so.4.4.0
+my_project: /usr/local/lib/libopencv_stitching.so.4.4.0
+my_project: /usr/local/lib/libopencv_aruco.so.4.4.0
+my_project: /usr/local/lib/libopencv_bgsegm.so.4.4.0
+my_project: /usr/local/lib/libopencv_bioinspired.so.4.4.0
+my_project: /usr/local/lib/libopencv_ccalib.so.4.4.0
+my_project: /usr/local/lib/libopencv_cvv.so.4.4.0
+my_project: /usr/local/lib/libopencv_dnn_objdetect.so.4.4.0
+my_project: /usr/local/lib/libopencv_dnn_superres.so.4.4.0
+my_project: /usr/local/lib/libopencv_dpm.so.4.4.0
+my_project: /usr/local/lib/libopencv_face.so.4.4.0
+my_project: /usr/local/lib/libopencv_fuzzy.so.4.4.0
+my_project: /usr/local/lib/libopencv_hfs.so.4.4.0
+my_project: /usr/local/lib/libopencv_img_hash.so.4.4.0
+my_project: /usr/local/lib/libopencv_intensity_transform.so.4.4.0
+my_project: /usr/local/lib/libopencv_line_descriptor.so.4.4.0
+my_project: /usr/local/lib/libopencv_mcc.so.4.4.0
+my_project: /usr/local/lib/libopencv_quality.so.4.4.0
+my_project: /usr/local/lib/libopencv_rapid.so.4.4.0
+my_project: /usr/local/lib/libopencv_reg.so.4.4.0
+my_project: /usr/local/lib/libopencv_rgbd.so.4.4.0
+my_project: /usr/local/lib/libopencv_saliency.so.4.4.0
+my_project: /usr/local/lib/libopencv_stereo.so.4.4.0
+my_project: /usr/local/lib/libopencv_structured_light.so.4.4.0
+my_project: /usr/local/lib/libopencv_superres.so.4.4.0
+my_project: /usr/local/lib/libopencv_surface_matching.so.4.4.0
+my_project: /usr/local/lib/libopencv_tracking.so.4.4.0
+my_project: /usr/local/lib/libopencv_videostab.so.4.4.0
+my_project: /usr/local/lib/libopencv_xfeatures2d.so.4.4.0
+my_project: /usr/local/lib/libopencv_xobjdetect.so.4.4.0
+my_project: /usr/local/lib/libopencv_xphoto.so.4.4.0
+my_project: /usr/local/lib/libdlib.a
+my_project: /usr/local/lib/libopencv_shape.so.4.4.0
+my_project: /usr/local/lib/libopencv_highgui.so.4.4.0
+my_project: /usr/local/lib/libopencv_datasets.so.4.4.0
+my_project: /usr/local/lib/libopencv_plot.so.4.4.0
+my_project: /usr/local/lib/libopencv_text.so.4.4.0
+my_project: /usr/local/lib/libopencv_dnn.so.4.4.0
+my_project: /usr/local/lib/libopencv_ml.so.4.4.0
+my_project: /usr/local/lib/libopencv_phase_unwrapping.so.4.4.0
+my_project: /usr/local/lib/libopencv_optflow.so.4.4.0
+my_project: /usr/local/lib/libopencv_ximgproc.so.4.4.0
+my_project: /usr/local/lib/libopencv_video.so.4.4.0
+my_project: /usr/local/lib/libopencv_videoio.so.4.4.0
+my_project: /usr/local/lib/libopencv_imgcodecs.so.4.4.0
+my_project: /usr/local/lib/libopencv_objdetect.so.4.4.0
+my_project: /usr/local/lib/libopencv_calib3d.so.4.4.0
+my_project: /usr/local/lib/libopencv_features2d.so.4.4.0
+my_project: /usr/local/lib/libopencv_flann.so.4.4.0
+my_project: /usr/local/lib/libopencv_photo.so.4.4.0
+my_project: /usr/local/lib/libopencv_imgproc.so.4.4.0
+my_project: /usr/local/lib/libopencv_core.so.4.4.0
 my_project: /usr/lib/x86_64-linux-gnu/libSM.so
 my_project: /usr/lib/x86_64-linux-gnu/libICE.so
 my_project: /usr/lib/x86_64-linux-gnu/libX11.so
@@ -251,7 +247,7 @@ my_project: /usr/lib/x86_64-linux-gnu/libatlas.so
 my_project: /usr/lib/x86_64-linux-gnu/libcblas.so
 my_project: /usr/lib/x86_64-linux-gnu/liblapack.so
 my_project: CMakeFiles/my_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable my_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable my_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -264,6 +260,6 @@ CMakeFiles/my_project.dir/clean:
 .PHONY : CMakeFiles/my_project.dir/clean
 
 CMakeFiles/my_project.dir/depend:
-	cd /home/emilioag/Documents/TC2004.1/GUIElements/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/emilioag/Documents/TC2004.1/GUIElements /home/emilioag/Documents/TC2004.1/GUIElements /home/emilioag/Documents/TC2004.1/GUIElements/build /home/emilioag/Documents/TC2004.1/GUIElements/build /home/emilioag/Documents/TC2004.1/GUIElements/build/CMakeFiles/my_project.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rojo/Documentos/Git/TC2004.1/GUIElements/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rojo/Documentos/Git/TC2004.1/GUIElements /home/rojo/Documentos/Git/TC2004.1/GUIElements /home/rojo/Documentos/Git/TC2004.1/GUIElements/build /home/rojo/Documentos/Git/TC2004.1/GUIElements/build /home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles/my_project.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_project.dir/depend
 

@@ -59,7 +59,7 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 	cv::FileStorage fs(fileName, cv::FileStorage::READ);
 	fast = new FastSearch(neighbors);
 	bool searchClients = true;
-	int keyCounter = 0;
+	keyCont=0;
 	std::string trykey = "";
 	std::string tempMatricula = "";
 	std::string tempName = "";
@@ -96,17 +96,20 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 			}
 			else {
 				cv::hconcat(features_vector, tempClient.face, features_vector);
+				keyCont++;
+				
 			}
 		}
 		else {
 			searchClients = false;
 		}
-		keyCounter++;
+		// keyCounter++;
 		//print();
 	}
 	fs.release();
 	features_vector = features_vector.t();
 	getGenericIndex();
+	printf("Key counter %d ",keyCont);
 
 }
 
@@ -114,12 +117,19 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 // Registrar cliente
 void Persistence::registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat, std::string clientPfp) {
 	Subject newRegister(clientId, clientName, clientCareer, clientEmail, clientStudent, faceMat, clientPfp);
-	users.insert(std::pair<std::string, Subject>(generateKey(), newRegister));
+	keyCont++;
+	std::string key= "A"+std::to_string(keyCont);
+	users.insert(std::pair<std::string, Subject>(key, newRegister));
+	cv::vconcat(features_vector,faceMat.t(),features_vector);
+	getGenericIndex();
+
+
 }
 
 // Eliminar cliente
 void Persistence::deleteClient(std::string key) {
 	users.erase(key);
+	keyCont--;
 }
 
 // Copiar a memoria
@@ -152,7 +162,10 @@ void Persistence::printQueryResults(cv::Mat indices){
 	}
 }
 cv::Mat Persistence::searchMat(cv::Mat query){
-	return fast->searchIndex(query);
+	cv::Mat result=  fast->searchIndex(query);
+	printQueryResults(result);
+	return result;
+
 }
 
 //GETTERS: Get the atribute searching by key

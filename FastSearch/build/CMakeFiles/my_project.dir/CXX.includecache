@@ -9,11 +9,7 @@
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp
 opencv2/opencv.hpp
 -
-<<<<<<< HEAD
-./PersistenceModule.hpp
-=======
 PersistenceModule.hpp
->>>>>>> FastSearch2Version
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 iostream
 -
@@ -29,22 +25,16 @@ iterator
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 opencv2/opencv.hpp
 -
-<<<<<<< HEAD
-=======
 ../../../FastSearch/moduleFS.hpp
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
->>>>>>> FastSearch2Version
 
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/main.cpp
 ../Feature_Extraction/source/moduleFE.hpp
 /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 moduleFS.hpp
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
-<<<<<<< HEAD
-=======
 /home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
 -
->>>>>>> FastSearch2Version
 
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp
 moduleFS.hpp
@@ -57,11 +47,24 @@ opencv2/opencv.hpp
 -
 opencv2/flann.hpp
 -
-<<<<<<< HEAD
-../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
-/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp
-=======
->>>>>>> FastSearch2Version
+
+/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp
+dlib/dnn.h
+-
+dlib/string.h
+-
+dlib/image_processing.h
+-
+opencv2/face.hpp
+-
+dlib/opencv.h
+-
+opencv2/opencv.hpp
+-
+opencv2/imgproc/types_c.h
+-
+moduleFE.hpp
+/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 
 /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 dlib/dnn.h
@@ -144,6 +147,16 @@ opencv2/core/check.hpp
 /usr/local/include/opencv4/opencv2/core/check.hpp
 opencv2/core/base.hpp
 -
+
+/usr/local/include/opencv4/opencv2/core/core_c.h
+opencv2/core/types_c.h
+/usr/local/include/opencv4/opencv2/core/opencv2/core/types_c.h
+cxcore.h
+/usr/local/include/opencv4/opencv2/core/cxcore.h
+cxcore.h
+/usr/local/include/opencv4/opencv2/core/cxcore.h
+opencv2/core/utility.hpp
+/usr/local/include/opencv4/opencv2/core/opencv2/core/utility.hpp
 
 /usr/local/include/opencv4/opencv2/core/cuda.hpp
 opencv2/core.hpp
@@ -391,6 +404,24 @@ opencv2/core/cvstd.hpp
 opencv2/core/matx.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core/matx.hpp
 
+/usr/local/include/opencv4/opencv2/core/types_c.h
+ipl.h
+-
+ipl/ipl.h
+-
+opencv2/core/cvdef.h
+/usr/local/include/opencv4/opencv2/core/opencv2/core/cvdef.h
+assert.h
+-
+stdlib.h
+-
+string.h
+-
+float.h
+-
+opencv2/core.hpp
+/usr/local/include/opencv4/opencv2/core/opencv2/core.hpp
+
 /usr/local/include/opencv4/opencv2/core/utility.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/core/opencv2/core.hpp
@@ -466,6 +497,78 @@ opencv2/dnn.hpp
 /usr/local/include/opencv4/opencv2/dnn/dnn.hpp
 
 /usr/local/include/opencv4/opencv2/dnn/version.hpp
+
+/usr/local/include/opencv4/opencv2/face.hpp
+opencv2/core.hpp
+/usr/local/include/opencv4/opencv2/opencv2/core.hpp
+face/predict_collector.hpp
+/usr/local/include/opencv4/opencv2/face/predict_collector.hpp
+map
+-
+opencv2/face/facerec.hpp
+/usr/local/include/opencv4/opencv2/opencv2/face/facerec.hpp
+opencv2/face/facemark.hpp
+/usr/local/include/opencv4/opencv2/opencv2/face/facemark.hpp
+opencv2/face/facemark_train.hpp
+/usr/local/include/opencv4/opencv2/opencv2/face/facemark_train.hpp
+opencv2/face/facemarkLBF.hpp
+/usr/local/include/opencv4/opencv2/opencv2/face/facemarkLBF.hpp
+opencv2/face/facemarkAAM.hpp
+/usr/local/include/opencv4/opencv2/opencv2/face/facemarkAAM.hpp
+opencv2/face/face_alignment.hpp
+/usr/local/include/opencv4/opencv2/opencv2/face/face_alignment.hpp
+opencv2/face/mace.hpp
+/usr/local/include/opencv4/opencv2/opencv2/face/mace.hpp
+
+/usr/local/include/opencv4/opencv2/face/face_alignment.hpp
+opencv2/face/facemark_train.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/face/facemark_train.hpp
+
+/usr/local/include/opencv4/opencv2/face/facemark.hpp
+opencv2/core.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/core.hpp
+vector
+-
+
+/usr/local/include/opencv4/opencv2/face/facemarkAAM.hpp
+opencv2/face/facemark_train.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/face/facemark_train.hpp
+
+/usr/local/include/opencv4/opencv2/face/facemarkLBF.hpp
+opencv2/face/facemark_train.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/face/facemark_train.hpp
+
+/usr/local/include/opencv4/opencv2/face/facemark_train.hpp
+opencv2/face/facemark.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/face/facemark.hpp
+opencv2/objdetect.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/objdetect.hpp
+vector
+-
+string
+-
+
+/usr/local/include/opencv4/opencv2/face/facerec.hpp
+opencv2/face.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/face.hpp
+opencv2/core.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/core.hpp
+
+/usr/local/include/opencv4/opencv2/face/mace.hpp
+opencv2/core.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/core.hpp
+
+/usr/local/include/opencv4/opencv2/face/predict_collector.hpp
+vector
+-
+map
+-
+utility
+-
+cfloat
+-
+opencv2/core/base.hpp
+/usr/local/include/opencv4/opencv2/face/opencv2/core/base.hpp
 
 /usr/local/include/opencv4/opencv2/features2d.hpp
 opencv2/opencv_modules.hpp
@@ -902,6 +1005,10 @@ opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/imgproc.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
+
+/usr/local/include/opencv4/opencv2/imgproc/types_c.h
+opencv2/core/core_c.h
+/usr/local/include/opencv4/opencv2/imgproc/opencv2/core/core_c.h
 
 /usr/local/include/opencv4/opencv2/ml.hpp
 opencv2/core.hpp
