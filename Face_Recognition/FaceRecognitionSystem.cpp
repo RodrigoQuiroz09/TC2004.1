@@ -5,7 +5,7 @@
 		faceDetector=FaceDetector();
         faceAlignment=Facealignment();
         featureExtraction=FeatureExtraction();
-		persistence=new Persistence("prueba.yml");
+		persistence=new Persistence("algo.yml");
 
 	}
 	
