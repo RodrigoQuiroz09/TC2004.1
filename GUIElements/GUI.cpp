@@ -34,7 +34,7 @@ void Gui::startGUI() {
 	cv::resize(cross, crossImage, size);
 	cv::resize(imagen, imgCloseMatch, smallSize);
 
-	std::string keyboard = "A";
+	std::string keyboard = "";
 
 	//Face Recog System:
 	FaceRecognitionSystem frs;

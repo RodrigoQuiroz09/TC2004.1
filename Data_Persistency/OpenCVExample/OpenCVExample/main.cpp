@@ -9,7 +9,7 @@ using namespace std;
 //PRESENTATION EXAMPLE:
 int main(int args, char **argv) {
 
-	float data[2] = { 1,2 };
+	// float data[2] = { 1,2 };
 	Mat frame = imread(argv[1]);
 	FeatureExtraction Fe;
 	frame=Fe.getFeatures(frame);
@@ -18,7 +18,7 @@ int main(int args, char **argv) {
 	Persistence newClient("clientsInfo.yml");
 	// newClient.print();
 	// puts("Antes de ");
-	newClient.registerClient(argv[3], argv[2], "IMI", "a0102777@itesm.mx", true, frame);
+	newClient.registerClient(argv[3], argv[2], "IMI", "a0102777@itesm.mx", true, frame,"sample.txt");
 	//newClient.deleteClient("A0");
 	// newClient.print();
 	// sleep(5);

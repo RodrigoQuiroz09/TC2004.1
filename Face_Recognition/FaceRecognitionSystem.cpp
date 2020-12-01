@@ -5,8 +5,8 @@
 		faceDetector=FaceDetector();
         faceAlignment=Facealignment();
         featureExtraction=FeatureExtraction();
-		persistence=new Persistence("algo.yml");
-
+		persistence=new Persistence("prueba.yml");
+// cd ..
 	}
 	
 	FaceRecognitionSystem::~FaceRecognitionSystem(){}
@@ -22,16 +22,18 @@
 		persistence->writeToDisc();
 	}
 
-	std::tuple<Subject,bool> FaceRecognitionSystem::personVerification(cv::Mat image2,std::string id){
+	std::tuple<Subject,bool> FaceRecognitionSystem::personVerification(cv::Mat image2,std::string ids){
 		cv::Rect rc;
 		bool validation;
 		rc = faceDetector.detectFace(&image2);
+		std::cout<<ids<<"\n";
+		int id=std::stoi(ids);
 
 		cv::Mat alignimage=faceAlignment.facealignment(image2, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);
 		cv::imshow("hello",alignimage);
 		cv::waitKey(0);
-			
+		
 		int result = featureExtraction.comparison(vector, persistence->getUserFace(id), .5);
 
 		Subject datos(persistence->getUserStudentID(id), persistence->getUserName(id), persistence->getUserCareer(id), 
@@ -55,15 +57,15 @@
 
 	std::vector<std::tuple<std::string,std::string>> FaceRecognitionSystem::personIdentification(cv::Mat mat){
 		cv::Rect rc;
+		int key;
 		rc = faceDetector.detectFace(&mat);
 		cv::Mat alignimage=faceAlignment.facealignment(mat, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);	
 		cv::Mat resultados=persistence->searchMat(vector);
 		std::vector<std::tuple<std::string,std::string>> data;
 		std::tuple<std::string,std::string> info;
-
 		for(int i=0; i<resultados.cols;i++){
-			std::string key = "A" + std::to_string(resultados.at<int>(i)); 
+			key = resultados.at<int>(i); 
 			std::string id = persistence->getUserStudentID(key);
 			std::string photo = persistence->getUserPfp(key);
 			info = std::make_tuple(id, photo);
