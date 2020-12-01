@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "string_view": "cpp",
+        "algorithm": "cpp",
+        "tuple": "cpp",
+        "typeinfo": "cpp"
+    }
+}

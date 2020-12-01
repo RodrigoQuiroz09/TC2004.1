@@ -21,22 +21,6 @@ FaceDetector::FaceDetector() {
 	}
 	readcascades.close(); //cierra la lectura 
 }
-
-FaceDetector::FaceDetector(string cascadePath, string cascadeText) {
-	// All classifiers are to be loaded beforehand to avoid delays and performance flaws
-	detector1.load(cascadePath);
-	
-	ifstream readcascades (cascadeText); //.txt tiene que estar en build o en donde están tus cascades
-	if(readcascades.is_open())  
-	{
-		while(getline(readcascades,cascade)){ //lee líneas del txt 
-			aux.load(cascade); //carga el classifier
-			Detectors.push_back(aux); //agrega classifier al vector 
-		}
-	}
-	readcascades.close(); //cierra la lectura 
-}
-
 FaceDetector:: ~FaceDetector() {} //destructor 
 
 
@@ -104,6 +88,7 @@ Rect FaceDetector::detectFace(Mat *image)
 		{
 			aux = rc.width;
 			aux2 = rc.height;
+
 			area=rc;
 		}
 	}

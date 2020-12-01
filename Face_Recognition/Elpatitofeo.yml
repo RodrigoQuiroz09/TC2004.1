@@ -1,0 +1,13 @@
+%YAML:1.0
+---
+A0:
+   Matricula: DEFAULT
+   Name: DEFAULT
+   Career: DEFAULT
+   Email: DEFAULT
+   Student: 0
+   faceMatrix: !!opencv-matrix
+      rows: 1
+      cols: 2
+      dt: f
+      data: [ -107374176., 1.40129846e-45 ]

@@ -1,0 +1,38 @@
+Determining if the function sgetrf_single exists failed with the following output:
+Change Dir: /Users/Hayoung/Documents/TC2004.1_V2/Face_Recognition/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c1b87/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c1b87.dir/build.make CMakeFiles/cmTC_c1b87.dir/build
+Building C object CMakeFiles/cmTC_c1b87.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgetrf_single -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/cmTC_c1b87.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c1b87
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1b87.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgetrf_single -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c1b87.dir/CheckFunctionExists.c.o -o cmTC_c1b87  /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/lib/libcblas.tbd 
+Undefined symbols for architecture x86_64:
+  "_sgetrf_single", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_c1b87] Error 1
+make: *** [cmTC_c1b87/fast] Error 2
+
+
+
+Determining if the function sgetrf_single exists failed with the following output:
+Change Dir: /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2d2df/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2d2df.dir/build.make CMakeFiles/cmTC_2d2df.dir/build
+Building C object CMakeFiles/cmTC_2d2df.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgetrf_single -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -o CMakeFiles/cmTC_2d2df.dir/CheckFunctionExists.c.o -c /usr/local/Cellar/cmake/3.18.2/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2d2df
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d2df.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgetrf_single -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_2d2df.dir/CheckFunctionExists.c.o -o cmTC_2d2df  /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/lib/libcblas.tbd 
+Undefined symbols for architecture x86_64:
+  "_sgetrf_single", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_2d2df] Error 1
+make: *** [cmTC_2d2df/fast] Error 2
+
+
+

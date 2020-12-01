@@ -1,22 +1,29 @@
 #include <opencv2/opencv.hpp>
 #include "PersistenceModule.hpp"
+#include "../../../Feature_Extraction/source/moduleFE.hpp"
 
 using namespace cv;
 using namespace std;
 
 
 //PRESENTATION EXAMPLE:
-int main() {
-	//Opens your webcam and stores what it sees in a Mat
-	VideoCapture cap(0);
-	Mat frame;
-	cap >> frame;
+int main(int args, char **argv) {
+
+	float data[2] = { 1,2 };
+	Mat frame = imread(argv[1]);
+	FeatureExtraction Fe;
+	frame=Fe.getFeatures(frame);
 
 	//Creates a persistence object, and registers a new client in memory, or delete a client using its key as parameter, and then you write to disk.
-	Persistence newClient;
-	//newClient.registerClient("A0102777", "Leo", "IMI", "a0102777@itesm.mx", true, frame);
-	newClient.deleteClient("A5");
+	Persistence newClient("clientsInfo.yml");
+	// newClient.print();
+	// puts("Antes de ");
+	newClient.registerClient(argv[3], argv[2], "IMI", "a0102777@itesm.mx", true, frame);
+	//newClient.deleteClient("A0");
+	// newClient.print();
+	// sleep(5);
+	// puts("ya termine de imprimir... ahora a escribir");
 	newClient.writeToDisc();
 	
 	return 0;
-}
+} 

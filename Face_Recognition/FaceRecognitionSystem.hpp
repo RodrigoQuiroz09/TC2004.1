@@ -1,7 +1,10 @@
+#ifndef __FACERECOGNITIONSYSTEM_HPP__
+#define __FACERECOGNITIONSYSTEM_HPP__
 #include "../Face_Alignment/src/facealignmentM2.hpp"
 #include "../Face_Detection/src/FaceDetector.hpp"
 #include "../Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.hpp"
 #include "../Feature_Extraction/source/moduleFE.hpp"
+#include "../FastSearch/moduleFS.hpp"
 #include <opencv2/opencv.hpp>
 #include <vector>
 #include <tuple>
@@ -9,13 +12,13 @@
 
 class FaceRecognitionSystem{
     private:
+        FaceDetector faceDetector;
         Facealignment faceAlignment;
         FeatureExtraction featureExtraction;
-        Persistence persistence;
+        Persistence *persistence;
 
     public:
         /* Constructor y Destructor */
-        FaceDetector faceDetector; //return 
         FaceRecognitionSystem();
         ~FaceRecognitionSystem();
 
@@ -27,26 +30,27 @@ class FaceRecognitionSystem{
         * @param clientStudent: if the person is a student or not
         * @param faceMat: image of the person 
         */
-        void addPerson(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat);
-
+        void addPerson(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat, std::string pfp);
+        
         /* Method that verifies if the ID holder is present in the image
         * @param image:image to be verified 
         * @param id: the id that belongs to the person in the image
-        * @return: data of the person in the subject class (can be null if no match was found). And if the person in the image is the same as the one in the DB
+        * @return: the person in the image is indeed the id holder or not 
         */
-        std::tuple<Subject,bool> personVerification(cv::Mat image,std::string id);
-
+        std::tuple<Subject,bool> personVerification(cv::Mat image2,std::string id);
+        
         /* Method that looks for a number of 10 people with similar characteristics to the one in the image.
         * @param mat: image that contains the person to be identied
         * @return:vector of a maximum number of 10 people with similar characteristics to the one in the image and their ID
         */
-        std::vector<std::tuple<cv::Mat,std::string>> personIdentification(cv::Mat mat);
-
+        std::vector<std::tuple<std::string,std::string>> personIdentification(cv::Mat mat);
+        
         /* Method that identifies rectangle within an image in which a face is detected
         * @param image: image to be analyzed
         * @return: rectangle where the face was identified 
         */
-        cv::Rect faceRect(cv::Mat *image);
-
+       bool faceRect(cv::Mat image);
 
 };
+
+#endif
