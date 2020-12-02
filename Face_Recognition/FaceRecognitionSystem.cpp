@@ -54,21 +54,17 @@
 
 	}
 
-	std::vector<std::tuple<std::string,std::string>> FaceRecognitionSystem::personIdentification(cv::Mat mat){
+	std::vector<Subject> FaceRecognitionSystem::personIdentification(cv::Mat mat){
 		cv::Rect rc;
 		int key;
 		rc = faceDetector.detectFace(&mat);
 		cv::Mat alignimage=faceAlignment.facealignment(mat, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);	
 		cv::Mat resultados=persistence->searchMat(vector);
-		std::vector<std::tuple<std::string,std::string>> data;
-		std::tuple<std::string,std::string> info;
+		std::vector<Subject> data;
 		for(int i=0; i<resultados.cols;i++){
-			key = resultados.at<int>(i); 
-			std::string id = persistence->getUserStudentID(key);
-			std::string photo = persistence->getUserPfp(key);
-			info = std::make_tuple(id, photo);
-			data.push_back(info);
+			key = resultados.at<int>(i);
+			data.push_back(persistence->getUser(key));
 		}
 		return data;
 	}

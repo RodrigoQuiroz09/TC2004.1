@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/emilioag/Documents/clonePrueba/TC2004.1/GUIElements
+CMAKE_SOURCE_DIR = /home/rojo/Documentos/Git/TC2004.1/GUIElements
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/emilioag/Documents/clonePrueba/TC2004.1/GUIElements/build
+CMAKE_BINARY_DIR = /home/rojo/Documentos/Git/TC2004.1/GUIElements/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emilioag/Documents/clonePrueba/TC2004.1/GUIElements/build/CMakeFiles /home/emilioag/Documents/clonePrueba/TC2004.1/GUIElements/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles /home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/emilioag/Documents/clonePrueba/TC2004.1/GUIElements/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rojo/Documentos/Git/TC2004.1/GUIElements/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,19 +123,6 @@ my_project/fast:
 	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/build
 .PHONY : my_project/fast
 
-#=============================================================================
-# Target rules for targets named dlib
-
-# Build rule for target.
-dlib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dlib
-.PHONY : dlib
-
-# fast build rule for target.
-dlib/fast:
-	$(MAKE) -f dlib_build/CMakeFiles/dlib.dir/build.make dlib_build/CMakeFiles/dlib.dir/build
-.PHONY : dlib/fast
-
 GUI.o: GUI.cpp.o
 
 .PHONY : GUI.o
@@ -163,167 +150,167 @@ GUI.cpp.s:
 	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/GUI.cpp.s
 .PHONY : GUI.cpp.s
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.o: home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
+home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.o: home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.o
-
-# target to build an object file
-home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
-
-home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.i: home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i
-
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.i
-
-# target to preprocess a source file
-home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i
-
-home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.s: home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s
-
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.s
-
-# target to generate assembly for a file
-home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s
-
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.o: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
-
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.o
 
 # target to build an object file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
+home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.o
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.i: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i
+home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.i: home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.i
 
 # target to preprocess a source file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i
+home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.i
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.s: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s
+home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.s: home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.s
 
 # target to generate assembly for a file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s
+home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.cpp.s
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.o: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
+home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.o: home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.o
 
 # target to build an object file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.o:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
+home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.o
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.i: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.i
+home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.i: home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.i
 
 # target to preprocess a source file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.i:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.i
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.i
+home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.i
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.s: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
+home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.s: home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.s
 
 # target to generate assembly for a file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.s:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
+home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.cpp.s
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.o: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o
+home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.o: home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.o
 
 # target to build an object file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o
+home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.o
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.i: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i
+home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.i: home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.i
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.i
 
 # target to preprocess a source file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i
+home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.i:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.i
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.s: home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s
+home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.s: home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.s
 
 # target to generate assembly for a file
-home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s
+home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.s:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.cpp.s
 
-home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.o: home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.o
+home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.o: home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.o
 
 # target to build an object file
-home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.o:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.o
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.o
+home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.o
 
-home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.i: home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.i
+home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.i: home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.i
 
 # target to preprocess a source file
-home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.i:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.i
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.i
+home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.i
 
-home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.s: home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.s
+home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.s: home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.s
 
 # target to generate assembly for a file
-home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.s:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.s
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.cpp.s
+home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.cpp.s
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.o: home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.o: home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.o
 
 # target to build an object file
-home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.o
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.i: home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.i: home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.i
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.i
 
 # target to preprocess a source file
-home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.i:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.i
 
-home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.s: home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
+home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.s: home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.s
 
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.s
 
 # target to generate assembly for a file
-home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s:
-	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
-.PHONY : home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
+home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.s:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp.s
+
+home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.o: home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.o
+
+# target to build an object file
+home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.o
+
+home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.i: home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.i
+
+# target to preprocess a source file
+home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.i
+
+home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.s: home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
+
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.s
+
+# target to generate assembly for a file
+home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s:
+	$(MAKE) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
+.PHONY : home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.cpp.s
 
 main.o: main.cpp.o
 
@@ -361,28 +348,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... my_project"
-	@echo "... dlib"
 	@echo "... GUI.o"
 	@echo "... GUI.i"
 	@echo "... GUI.s"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.o"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.i"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.s"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.o"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.i"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Alignment/src/facealignmentM2.s"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.o"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.i"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Detection/src/FaceDetector.s"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.o"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.i"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Face_Recognition/FaceRecognitionSystem.s"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.o"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.i"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/FastSearch/moduleFS.s"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.o"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.i"
-	@echo "... home/emilioag/Documents/clonePrueba/TC2004.1/Feature_Extraction/source/moduleFE.s"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.o"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.i"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Data_Persistency/OpenCVExample/OpenCVExample/PersistenceModule.s"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.o"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.i"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Alignment/src/facealignmentM2.s"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.o"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.i"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Detection/src/FaceDetector.s"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.o"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.i"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Face_Recognition/FaceRecognitionSystem.s"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.o"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.i"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.s"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.o"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.i"
+	@echo "... home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

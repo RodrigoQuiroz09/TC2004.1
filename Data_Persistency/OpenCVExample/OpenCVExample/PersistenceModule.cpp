@@ -171,7 +171,6 @@ void Persistence::printQueryResults(cv::Mat indices){
 cv::Mat Persistence::searchMat(cv::Mat query){
 	getGenericIndex();
 	cv::Mat result= fast->searchIndex(query);
-	printQueryResults(result);
 	return result;
 
 }
@@ -203,6 +202,9 @@ std::string Persistence::getUserStudentID(int position) {
 
 std::string Persistence::getUserPfp(int position) {
 	return users[position].pfp;
+}
+Subject Persistence::getUser(int position){
+	return users.at(position);
 }
 #endif
 

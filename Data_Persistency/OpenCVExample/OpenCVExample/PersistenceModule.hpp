@@ -59,5 +59,7 @@ public:
 	std::string getUserStudentID(int position);
 
 	std::string getUserPfp(int position);
+	
+	Subject getUser(int position);
 
 };

@@ -43,7 +43,7 @@ class FaceRecognitionSystem{
         * @param mat: image that contains the person to be identied
         * @return:vector of a maximum number of 10 people with similar characteristics to the one in the image and their ID
         */
-        std::vector<std::tuple<std::string,std::string>> personIdentification(cv::Mat mat);
+        std::vector<Subject> personIdentification(cv::Mat mat);
         
         /* Method that identifies rectangle within an image in which a face is detected
         * @param image: image to be analyzed
