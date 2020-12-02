@@ -1,6 +1,6 @@
 %YAML:1.0
 ---
-A0:
+A01027304:
    Matricula: A01027304
    Name: Emilio Alcantara
    Career: itc
@@ -53,7 +53,7 @@ A0:
           -7.85237551e-02, 5.86635172e-02, -1.14231504e-01,
           9.68036801e-02, 4.89406697e-02 ]
    pfp: "../images/A01027304.jpg"
-A1:
+A01023256:
    Matricula: A01023256
    Name: Abraham Garcia
    Career: ITC11
@@ -106,7 +106,7 @@ A1:
           -6.63103685e-02, 7.63964802e-02, -1.11588314e-01,
           3.25545445e-02, 7.37063736e-02 ]
    pfp: "../images/A01023256.jpg"
-A2:
+A01022676:
    Matricula: A01022676
    Name: Christopher Miranda
    Career: ITC
@@ -160,7 +160,7 @@ A2:
           8.12060088e-02, -4.33240533e-02, 4.43575829e-02,
           -2.38273740e-02 ]
    pfp: "../images/A01022676.jpg"
-A3:
+A01026744:
    Matricula: A01026744
    Name: Ana Minchaca
    Career: ITC
@@ -213,7 +213,7 @@ A3:
           -1.81213409e-01, -4.56700809e-02, 6.68701082e-02,
           -7.36020431e-02, 7.47843087e-03, -1.22446492e-02 ]
    pfp: "../images/A01026744.jpg"
-A4:
+A01023638:
    Matricula: A01023638
    Name: Katia Bellido
    Career: ITC
@@ -266,7 +266,7 @@ A4:
           -1.96384028e-01, -2.66556069e-02, 1.15559950e-01,
           -2.87768692e-02, 9.22170430e-02, -6.17034622e-02 ]
    pfp: "../images/A01023638.jpg"
-A5:
+A01026717:
    Matricula: A01026717
    Name: Constanza Gomez
    Career: ITC
@@ -319,7 +319,7 @@ A5:
           -5.62257990e-02, 7.73198754e-02, -6.43187091e-02,
           2.25405544e-02, -7.27491081e-03 ]
    pfp: "../images/A01026717.jpg"
-A6:
+A01026759:
    Matricula: A01026759
    Name: Lorenzo Jacome
    Career: ITC
@@ -372,7 +372,7 @@ A6:
           -1.40148565e-01, -5.91991190e-03, 6.74146190e-02,
           -2.10194532e-02, 9.71379653e-02, 2.10044421e-02 ]
    pfp: "../images/A01026759.jpg"
-A7:
+A01023121:
    Matricula: A01023121
    Name: Rodrigo Sibaja
    Career: ITC
@@ -425,7 +425,7 @@ A7:
           -1.24448210e-01, -9.80752781e-02, 3.71024646e-02,
           -4.43564244e-02, 1.36488169e-01, 5.00839995e-03 ]
    pfp: "../images/A01023121.jpg"
-A8:
+A01026567:
    Matricula: A01026567
    Name: Andres Barragan
    Career: ITC
@@ -477,7 +477,7 @@ A8:
           -2.02184334e-01, 2.61265785e-03, 9.03029665e-02,
           -1.22109599e-01, 1.41755074e-01, -2.99341977e-03 ]
    pfp: "../images/A01026567.jpg"
-A9:
+A01748161:
    Matricula: A01748161
    Name: Marcela Fuentes
    Career: ITC
@@ -530,7 +530,7 @@ A9:
           -8.48648995e-02, 5.87299503e-02, -1.01035945e-01,
           2.59268731e-02, -3.56179252e-02 ]
    pfp: "../images/A01748161.jpg"
-A10:
+A01027077:
    Matricula: A01027077
    Name: Esteban Manrique
    Career: ITC
@@ -584,7 +584,7 @@ A10:
           4.11122404e-02, -1.06063418e-01, 1.07681945e-01,
           1.55249592e-02 ]
    pfp: "../images/A01027077.jpg"
-A11:
+A01025798:
    Matricula: A01025798
    Name: Isaac Garza
    Career: ITC
@@ -637,7 +637,7 @@ A11:
           -1.64002135e-01, -3.82803790e-02, 1.02236971e-01,
           9.01541859e-03, 4.89998311e-02, 8.14781934e-02 ]
    pfp: "../images/A01025798.jpg"
-A12:
+A01022398:
    Matricula: A01022398
    Name: Miguel Hernandez
    Career: ITC
@@ -690,7 +690,7 @@ A12:
           -2.30297714e-01, -4.45785001e-02, 2.49933675e-02,
           -9.30784419e-02, 1.03123061e-01, -4.52680364e-02 ]
    pfp: "../images/A01022398.jpg"
-A13:
+A01027446:
    Matricula: A01027446
    Name: Karen Morgado
    Career: ITC
@@ -743,7 +743,7 @@ A13:
           -9.72013772e-02, 9.33232754e-02, -8.08174759e-02,
           7.01016337e-02, -8.94811004e-03 ]
    pfp: "../images/A01027446.jpg"
-A14:
+A01026546:
    Matricula: A01026546
    Name: Rodrigo Quiroz
    Career: ITC

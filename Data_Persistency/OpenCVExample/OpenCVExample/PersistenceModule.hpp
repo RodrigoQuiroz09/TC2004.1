@@ -20,7 +20,7 @@ class Persistence {
 	std::string fileName = "";
 	std::vector<Subject> users;
 	std::string clientKey = "";
-	std::map<std::string, Subject>::iterator itr;
+	std::map<std::string, int> usersKeys;
 	int keyCont;
 
 private:
@@ -61,5 +61,6 @@ public:
 	std::string getUserPfp(int position);
 	
 	Subject getUser(int position);
-
+	
+	int getPositionByKey(std::string key);
 };

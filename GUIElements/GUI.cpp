@@ -35,7 +35,7 @@ void Gui::startGUI() {
 	cv::resize(cross, crossImage, size);
 	cv::resize(imagen, imgCloseMatch, smallSize);
 
-	std::string keyboard = "";
+	std::string keyboard = "A";
 
 	//Face Recog System:
 	FaceRecognitionSystem frs;
@@ -150,7 +150,7 @@ void Gui::startGUI() {
 				keyboard += "0";
 			}
 			else if (cvui::button(frame, 45, 300, "DELETE")) {
-				keyboard = "";
+				keyboard = "A";
 			}
 			if ((cvui::button(frame, 800, 20, "Cerrar")) || cv::waitKey(1) == 27) 
 			{

@@ -90,15 +90,15 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 
 		if (tempMatricula.compare("") != 0) {
 			users.push_back(tempClient);
+			usersKeys.insert(std::pair<std::string,int>(tempMatricula,keyCont));
 			if (searchClients) {
 				features_vector = tempClient.face.t();
 				searchClients = false;
 			}
 			else {
-				cv::vconcat(features_vector, tempClient.face.t(), features_vector);
-				keyCont++;
-				
+				cv::vconcat(features_vector, tempClient.face.t(), features_vector);				
 			}
+			keyCont++;
 		}
 		else {
 			searchClients = false;
@@ -142,7 +142,7 @@ void Persistence::writeToDisc() {
 	int cont = 0;
 	//puts("ANTES DEL FOR");
 	for (cont;cont<users.size();++cont) {
-		fs << "A"+std::to_string(cont) << "{";
+		fs << users.at(cont).id << "{";
 		fs << "Matricula" << users.at(cont).id;
 		fs << "Name" << users.at(cont).name;
 		fs << "Career" << users.at(cont).career;
@@ -205,6 +205,9 @@ std::string Persistence::getUserPfp(int position) {
 }
 Subject Persistence::getUser(int position){
 	return users.at(position);
+}
+int Persistence::getPositionByKey(std::string key){
+	return usersKeys[key];
 }
 #endif
 

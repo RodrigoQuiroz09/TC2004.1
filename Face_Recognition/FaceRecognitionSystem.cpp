@@ -25,8 +25,9 @@
 		cv::Rect rc;
 		bool validation;
 		rc = faceDetector.detectFace(&image2);
-		std::cout<<ids<<"\n";
-		int id=std::stoi(ids);
+		int id=persistence->getPositionByKey(ids);
+		//std::cout<<ids<<"\n";
+		//int id=std::stoi(ids);
 		std::cout<<"numero "<<id<<"\n";
 
 		cv::Mat alignimage=faceAlignment.facealignment(image2, rc);
