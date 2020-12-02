@@ -26,10 +26,6 @@
 		bool validation;
 		rc = faceDetector.detectFace(&image2);
 		int id=persistence->getPositionByKey(ids);
-		//std::cout<<ids<<"\n";
-		//int id=std::stoi(ids);
-		std::cout<<"numero "<<id<<"\n";
-
 		cv::Mat alignimage=faceAlignment.facealignment(image2, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);
 		
@@ -43,12 +39,10 @@
 		if(result==1)
 		{
 			validation = true;
-			std::cout<<"WELCOME "<<persistence->getUserName(id)<<std::endl;
 			tupla = std::make_tuple(datos, validation);
 			return tupla;
 		} else {
 			validation = false;
-			std::cout<<"IMPOSTOR"<<std::endl;
 			tupla = std::make_tuple(datos, validation);
 			return tupla;
 		}

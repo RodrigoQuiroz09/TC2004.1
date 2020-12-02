@@ -50,15 +50,15 @@ cv::Mat FeatureExtraction::getFeatures(cv::Mat frame)
 int FeatureExtraction::comparison(cv::Mat firstface, cv::Mat secondface)
 {
     distance = norm(firstface, secondface, cv::NORM_L2);
-    std::cout << "distance : " << distance << std::endl;
+    //std::cout << "distance : " << distance << std::endl;
     if (distance <= threshold)
     {
-        puts("Its a match!");
+        //puts("Its a match!");
         return 1;
     }
     else
     {
-        puts("Not a match");
+       // puts("Not a match");
         return 0;
     }
 }
@@ -70,15 +70,15 @@ int FeatureExtraction::comparison(cv::Mat firstface, cv::Mat secondface)
 int FeatureExtraction::comparison(cv::Mat firstface, cv::Mat secondface, float threshold)
 {
     distance = norm(firstface, secondface, cv::NORM_L2);
-    std::cout << "distance : " << distance << std::endl;
+    //std::cout << "distance : " << distance << std::endl;
     if (distance <= threshold)
     {
-        puts("Its a match!");
+        //puts("Its a match!");
         return 1;
     }
     else
     {
-        puts("Not a match");
+        //puts("Not a match");
         return 0;
     }
 }

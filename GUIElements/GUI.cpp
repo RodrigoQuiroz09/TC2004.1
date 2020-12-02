@@ -25,7 +25,7 @@ void Gui::startGUI() {
 
 	//Read and resize image:
 	cv::Mat imagen = cv::imread("lena.jpg");
-	cv::Mat cross = cv::imread("test.jpg");
+	cv::Mat cross = cv::imread("lena.jpg");
 	cv::Mat IMG1, crossImage, imgCloseMatch;
 	cv::Mat userCapture, userCapShow;
 	cv::Size size(175, 150); //Tamaño de la imagen cuando se verifica
@@ -360,7 +360,15 @@ void Gui::startGUI() {
 			cvui::text(frame, 300, 125, "Matricula: " + std::get<0>(userVeri).id);
 			cvui::text(frame, 300, 150, "Carrera: " + std::get<0>(userVeri).career);
 			cvui::text(frame, 300, 175, "Email: " + std::get<0>(userVeri).email);
-			cvui::printf(frame, 300, 200, 0.4, 0xF2F7FB, "Estudiante:");
+			if(std::get<0>(userVeri).currStudent)
+			{
+			 	cvui::printf(frame, 300, 200, 0.4, 0xF2F7FB, "Estudiante");
+			}
+			else
+			{
+				 cvui::printf(frame, 300, 200, 0.4, 0xF2F7FB, "Docente");
+			}
+			
 			veriPic = cv::imread(std::get<0>(userVeri).pfp);
 			cv::resize(veriPic, veriPicShow, size);
 			cvui::image(frame, 600, 100, veriPicShow);//Captura pfp
