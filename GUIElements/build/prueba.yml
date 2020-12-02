@@ -1,10 +1,10 @@
 %YAML:1.0
 ---
 A0:
-   Matricula: a01027
+   Matricula: A01027304
    Name: Emilio
    Career: itc
-   Email: "a010@f.com"
+   Email: "a01027304@itesm.mx"
    Student: 1
    faceMatrix: !!opencv-matrix
       rows: 128
@@ -52,7 +52,7 @@ A0:
           3.19216698e-02, 4.11680155e-02, -1.56474069e-01,
           -7.85237551e-02, 5.86635172e-02, -1.14231504e-01,
           9.68036801e-02, 4.89406697e-02 ]
-   pfp: "../images/a01027.jpg"
+   pfp: "../images/A01027304.jpg"
 A1:
    Matricula: A01023256
    Name: Abraham

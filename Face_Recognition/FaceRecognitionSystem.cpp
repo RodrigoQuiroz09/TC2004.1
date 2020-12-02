@@ -31,10 +31,9 @@
 
 		cv::Mat alignimage=faceAlignment.facealignment(image2, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);
-		cv::imshow("hello",alignimage);
-		cv::waitKey(0);
 		
-		int result = featureExtraction.comparison(vector, persistence->getUserFace(id), .5);
+		
+		int result = featureExtraction.comparison(vector, persistence->getUserFace(id), .45);
 
 		Subject datos(persistence->getUserStudentID(id), persistence->getUserName(id), persistence->getUserCareer(id), 
 		persistence->getUserEmail(id), persistence->getUserIsStudent(id), persistence->getUserFace(id), persistence->getUserPfp(id));

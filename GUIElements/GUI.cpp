@@ -150,7 +150,7 @@ void Gui::startGUI() {
 				keyboard += "0";
 			}
 			else if (cvui::button(frame, 45, 300, "DELETE")) {
-				keyboard = "A";
+				keyboard = "";
 			}
 			if ((cvui::button(frame, 800, 20, "Cerrar")) || cv::waitKey(1) == 27) 
 			{
@@ -322,7 +322,7 @@ void Gui::startGUI() {
 		//Constantes (Est�n independientemente de si el usuario es aceptado o rechazado):
 		if (detect121) {
 
-			if(userKey.length()==1)
+			if(userKey.length()==0)
 			{
 				showHomeScreen = true;
 				detect121 = false;
