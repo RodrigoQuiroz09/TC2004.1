@@ -108,7 +108,7 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 	}
 	fs.release();
 	getGenericIndex();
-	printf("Key counter %d ",keyCont);
+	//printf("Key counter %d ",keyCont);
 
 }
 
@@ -117,6 +117,7 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 void Persistence::registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat, std::string clientPfp) {
 	//puts("INICIA register");
 	Subject newRegister(clientId, clientName, clientCareer, clientEmail, clientStudent, faceMat, clientPfp);
+	usersKeys.insert(std::pair<std::string,int>(clientId,keyCont));
 	keyCont++;
 	//std::string key= "A"+std::to_string(keyCont);
 	users.push_back(newRegister);
