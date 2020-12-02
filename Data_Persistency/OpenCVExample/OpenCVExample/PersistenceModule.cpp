@@ -89,13 +89,13 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 		Subject tempClient(tempMatricula, tempName, tempCareer, tempEmail, tempStudent, tempFace, tempPfp);
 
 		if (tempMatricula.compare("") != 0) {
-			users.insert(std::pair<std::string, Subject>(trykey, tempClient));
+			users.push_back(tempClient);
 			if (searchClients) {
-				features_vector = tempClient.face;
+				features_vector = tempClient.face.t();
 				searchClients = false;
 			}
 			else {
-				cv::hconcat(features_vector, tempClient.face, features_vector);
+				cv::vconcat(features_vector, tempClient.face.t(), features_vector);
 				keyCont++;
 				
 			}
@@ -107,7 +107,6 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 		//print();
 	}
 	fs.release();
-	features_vector = features_vector.t();
 	getGenericIndex();
 	printf("Key counter %d ",keyCont);
 
@@ -116,85 +115,94 @@ Persistence::Persistence(std::string storageFileName, int neighbors) {
 
 // Registrar cliente
 void Persistence::registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat, std::string clientPfp) {
+	//puts("INICIA register");
 	Subject newRegister(clientId, clientName, clientCareer, clientEmail, clientStudent, faceMat, clientPfp);
 	keyCont++;
-	std::string key= "A"+std::to_string(keyCont);
-	users.insert(std::pair<std::string, Subject>(key, newRegister));
-	cv::vconcat(features_vector,faceMat.t(),features_vector);
+	//std::string key= "A"+std::to_string(keyCont);
+	users.push_back(newRegister);
+	//std::cout<<"vector a aniadir: "<<faceMat.t()<<"\n";
+	cv::vconcat(features_vector,newRegister.face.t(),features_vector);
+	//std::cout<<"mat despues de aniadir: "<<features_vector<<"\n";
 	getGenericIndex();
+	//puts("TErmina register");
 
 
 }
 
 // Eliminar cliente
-void Persistence::deleteClient(std::string key) {
-	users.erase(key);
-	keyCont--;
+void Persistence::deleteClient(int position) {
+	// users.erase(position)
+	// keyCont--;
 }
 
 // Copiar a memoria
 void Persistence::writeToDisc() {
+	//puts("INICIA WRITE");
 	cv::FileStorage fs(fileName, cv::FileStorage::WRITE);
 	int cont = 0;
-	for (itr = users.begin(); itr != users.end(); ++itr) {
-		fs << itr->first << "{";
-		fs << "Matricula" << itr->second.id;
-		fs << "Name" << itr->second.name;
-		fs << "Career" << itr->second.career;
-		fs << "Email" << itr->second.email;
-		fs << "Student" << itr->second.currStudent;
-		fs << "faceMatrix" << itr->second.face;
-		fs << "pfp" << itr->second.pfp;
+	//puts("ANTES DEL FOR");
+	for (cont;cont<users.size();++cont) {
+		fs << "A"+std::to_string(cont) << "{";
+		fs << "Matricula" << users.at(cont).id;
+		fs << "Name" << users.at(cont).name;
+		fs << "Career" << users.at(cont).career;
+		fs << "Email" << users.at(cont).email;
+		fs << "Student" << users.at(cont).currStudent;
+		fs << "faceMatrix" << users.at(cont).face;
+		fs << "pfp" << users.at(cont).pfp;
 		fs << "}";
 	}
+	// puts("TERMINA WRITE");
+	// print();
 
 	fs.release();
 }
 void Persistence::print() {
-	for (std::map<std::string, Subject>::const_iterator cont = users.begin(); cont != users.end(); ++cont) {
-		std::cout << "\n" << cont->first << " " << cont->second.face << "\n";
+	for(int i=0;i<users.size();++i){
+		std::cout<<users[i].name<<"\n";
 	}
 }
 void Persistence::printQueryResults(cv::Mat indices){
 	for(int i=0;i<indices.cols;++i){
-		std::string key = "A" + std::to_string(indices.at<int>(i));
+		int key =indices.at<int>(i);
 		std::cout << getUserName(key) << " " << getUserStudentID(key) << std::endl;
 	}
 }
 cv::Mat Persistence::searchMat(cv::Mat query){
-	cv::Mat result=  fast->searchIndex(query);
+	getGenericIndex();
+	cv::Mat result= fast->searchIndex(query);
 	printQueryResults(result);
 	return result;
 
 }
 
 //GETTERS: Get the atribute searching by key
-cv::Mat Persistence::getUserFace(std::string userID) {
-	return users[userID].face;
+cv::Mat Persistence::getUserFace(int position) {
+	return users[position].face;
 }
 
-bool Persistence::getUserIsStudent(std::string userID) {
-	return users[userID].currStudent;
+bool Persistence::getUserIsStudent(int position) {
+	return users[position].currStudent;
 }
 
-std::string Persistence::getUserEmail(std::string userID) {
-	return users[userID].email;
+std::string Persistence::getUserEmail(int position) {
+	return users[position].email;
 }
 
-std::string Persistence::getUserCareer(std::string userID) {
-	return users[userID].career;
+std::string Persistence::getUserCareer(int position) {
+	return users[position].career;
 }
 
-std::string Persistence::getUserName(std::string userID) {
-	return users[userID].name;
+std::string Persistence::getUserName(int position) {
+	return users[position].name;
 }
 
-std::string Persistence::getUserStudentID(std::string userID) {
-	return users[userID].id;
+std::string Persistence::getUserStudentID(int position) {
+	return users[position].id;
 }
 
-std::string Persistence::getUserPfp(std::string userID) {
-	return users[userID].pfp;
+std::string Persistence::getUserPfp(int position) {
+	return users[position].pfp;
 }
 #endif
 

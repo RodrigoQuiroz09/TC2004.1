@@ -22,7 +22,16 @@ FastSearch::FastSearch(int neighbors)
 
 cv::Mat FastSearch::searchIndex(cv::Mat query)
 {
+    
     matIndex->knnSearch(query.t(), *indices, *distances, max_neighbors, cvflann::SearchParams());
+    // std::cout<<distances->at<float>(2)<<std::endl;
+    // std::cout<<indices->at<int>(2)<<std::endl;
     return *indices;
+}
+
+void FastSearch::crearIndice(cv::Mat matToIndex){
+    matIndex = new cv::flann::GenericIndex<cvflann::L2<float>>(matToIndex, cvflann::KDTreeIndexParams());
+    // printf("matINDEX: %d\n",matIndex->size());
+    // std::cout<<"indexFlan: "<<matIndex->getIndexParameters()<<"\n";
 }
 

@@ -18,7 +18,7 @@ public:
 
 class Persistence {
 	std::string fileName = "";
-	std::map<std::string, Subject> users;
+	std::vector<Subject> users;
 	std::string clientKey = "";
 	std::map<std::string, Subject>::iterator itr;
 	int keyCont;
@@ -37,7 +37,7 @@ public:
 	Persistence(std::string storageFileName, int neighbors=10);
 	void registerClient(std::string clientId, std::string clientName, std::string clientCareer, std::string clientEmail, bool clientStudent, cv::Mat faceMat, std::string clientPfp);
 
-	void deleteClient(std::string key);
+	void deleteClient(int position);
 
 	void writeToDisc();
 	void print();
@@ -46,18 +46,18 @@ public:
 	void printQueryResults(cv::Mat indices);
 
 	//GETTERS: Get the atribute searching by key
-	cv::Mat getUserFace(std::string userID);
+	cv::Mat getUserFace(int position);
 
-	bool getUserIsStudent(std::string userID);
+	bool getUserIsStudent(int position);
 
-	std::string getUserEmail(std::string userID);
+	std::string getUserEmail(int position);
 
-	std::string getUserCareer(std::string userID);
+	std::string getUserCareer(int position);
 
-	std::string getUserName(std::string userID);
+	std::string getUserName(int position);
 
-	std::string getUserStudentID(std::string userID);
+	std::string getUserStudentID(int position);
 
-	std::string getUserPfp(std::string userID);
+	std::string getUserPfp(int position);
 
 };

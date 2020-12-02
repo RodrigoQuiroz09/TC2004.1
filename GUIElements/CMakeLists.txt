@@ -4,9 +4,18 @@ cmake_minimum_required(VERSION 3.1)
 # Define project name
 project(my_project)
 
+<<<<<<< HEAD
 # enable C++ 11
 set (CMAKE_CXX_STANDARD 11)
 include (/home/emilioag/Downloads/dlib-19.21/dlib/cmake)
+=======
+SET(OPEN "" CACHE STRING "PUT PATH TO OpenCV")
+SET(DL "" CACHE STRING "PUT PATH TO Dlib")
+
+# enable C++ 11
+set (CMAKE_CXX_STANDARD 11)
+include (${DL})
+>>>>>>> EntregaFinal
 
 # Find OpenCV, you may need to set OpenCV_DIR variable
 # to the absolute path to the directory containing OpenCVConfig.cmake file
@@ -14,7 +23,11 @@ include (/home/emilioag/Downloads/dlib-19.21/dlib/cmake)
 
 # if not, use manual specification of the OpenCVConfig.cmake path
 # and comment previous line of automatic finding
+<<<<<<< HEAD
 find_package(OpenCV REQUIRED PATHS /home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4 NO_DEFAULT_PATH)  
+=======
+find_package(OpenCV REQUIRED PATHS ${OPEN} NO_DEFAULT_PATH)  
+>>>>>>> EntregaFinal
 #find_package(OpenCV REQUIRED)
 #find_package(dlib REQUIRED)
 # If the package has been found, several variables will

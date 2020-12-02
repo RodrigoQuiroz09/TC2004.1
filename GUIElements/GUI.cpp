@@ -25,7 +25,7 @@ void Gui::startGUI() {
 
 	//Read and resize image:
 	cv::Mat imagen = cv::imread("lena.jpg");
-	cv::Mat cross = cv::imread("lena.jpg");
+	cv::Mat cross = cv::imread("test.jpg");
 	cv::Mat IMG1, crossImage, imgCloseMatch;
 	cv::Mat userCapture, userCapShow;
 	cv::Size size(175, 150); //Tamaño de la imagen cuando se verifica
@@ -35,7 +35,7 @@ void Gui::startGUI() {
 	cv::resize(cross, crossImage, size);
 	cv::resize(imagen, imgCloseMatch, smallSize);
 
-	std::string keyboard = "A";
+	std::string keyboard = "";
 
 	//Face Recog System:
 	FaceRecognitionSystem frs;

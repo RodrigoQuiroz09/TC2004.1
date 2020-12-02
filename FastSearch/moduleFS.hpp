@@ -35,9 +35,7 @@ public:
     *@param matToIndex: Mat that is going to be indexed
     *@return nonthing
     */
-    void crearIndice(cv::Mat matToIndex){
-        matIndex = new cv::flann::GenericIndex<cvflann::L2<float>>(matToIndex, cvflann::KDTreeIndexParams());
-    }
+    void crearIndice(cv::Mat matToIndex);
 };
 
 #endif
