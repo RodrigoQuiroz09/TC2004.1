@@ -1,37 +1,37 @@
 # TC2004.1
 Team 3: Face features extraction and comparison.
 
-Este es el módulo encargado de Feature Extraction para el proyecto de reconocimiento facial y verificacion.
+This module is in charge of Feature Extraction for the Fatial recognition and verification project.
 
-Recuerden que para poder compilar y correr el programa deben de seguir los siguientes pasos:
+Keep in mind, in order to compile and run the program it is important to follow next steps:
 
-*IMPORTANTE:
+*IMPORTANT:
 
-Se debe de descargar la librería DLib, para poderse compilar y ejecutar.*
+The library DLIB must be downloadees in order to compile and execute.*
 
-*Se debe de modificar el CMakeLists.txt con el path correcto de Dlib y de OpenCV de aquel que compile este módulo*
+* CMakeLists.txt must be modified with correct DLIB and OpenCV paths for this module to compile *
 
-1. mkdir build (En caso de que no exista)
+1. mkdir build (In case it doesn't exist)
 2. cd build
 3. cmake ..
 4. make
 5. ./my_project
 
-En el archivo moduleFE.hpp, el cuál es nuestro header, se declaran las variables template que servirán para la extracción de rasgos, por lo que esas variables no se deberan de mover.
+The file moduleFE.hpp, which is the header, there are some template variables declared that will help in the feature Extration. Because of this, they can't be removed.
 
-También se declara un objeto del tipo anet_type llamado net, el cuál no se deberá de cambiar debido a que en este mismo se usa para el archivo dlib_face_recognition_resnet_model_v1.dat, que debera estar siempre incluido en la misma carpeta del módulo.
+Also, theres declaration of a type anet_type object called net, which must not be modified because this object is used for thee file dlib_face_recognition_resnet_model_v1.dat, which must be included in the same module folder.
 
-El valor de threshold no se debe de modificar debido a que es el umbral que se incluye por default. En caso de querer cambiar el valor, existe una sobrecarga de métodos en el cuál se puede cambiar, a través de la inclusión dentro de los parametros (debe de ser float).
+The threshold value must not be modified because its the default value. In case of wanting to change the value, there is a overwrite in a method this value needs to be a float.
 
-Se incluyen los métodos y constructor de la clase FeatureExtraction.
+Methods and constructors of FeatureExtraction class are included.
 
-En el moduleFE.cpp, se explica cada método a detalle, incluyendo los parametros que se deben de usar.
+In the moduleFE.cpp it is explained with detailed every method, including the parameters that must be used.
 
-Para poder hacer pruebas con dos imágenes, se deben de poner correctamente su ruta a la hora de ejecutar el main.cpp:
+In order to make tests with 2 images, their correct path must be set at the time to execute the main.cpp:
 
-EJEMPLO:
+EXAMPLE:
 ./my_project ../Examples/Maikol1.jpeg ../Examples/Maikol2.jpeg
 
-IMPORTANTE:
+IMPORTANT:
 
-Se debe de descargar la librería DLib, para poderse compilar y ejecutar.
+The library DLIB must be downloadees in order to compile and execute.
