@@ -1,0 +1,60 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_c5f4a/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_c5f4a.dir/build.make CMakeFiles/cmTC_c5f4a.dir/build
+gmake[1]: Entering directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c5f4a.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_c5f4a.dir/src.cxx.o -c "/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_c5f4a
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5f4a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_c5f4a.dir/src.cxx.o -o cmTC_c5f4a 
+gmake[1]: Leaving directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeeded with the following output:
+Change Dir: /Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_517db/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_517db.dir/build.make CMakeFiles/cmTC_517db.dir/build
+gmake[1]: Entering directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_517db.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX0X -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++0x -o CMakeFiles/cmTC_517db.dir/src.cxx.o -c "/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_517db
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_517db.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX0X -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_517db.dir/src.cxx.o -o cmTC_517db 
+gmake[1]: Leaving directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_da3dd/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_da3dd.dir/build.make CMakeFiles/cmTC_da3dd.dir/build
+gmake[1]: Entering directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_da3dd.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_da3dd.dir/src.cxx.o -c "/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_da3dd
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da3dd.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX11 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_da3dd.dir/src.cxx.o -o cmTC_da3dd 
+gmake[1]: Leaving directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeeded with the following output:
+Change Dir: /Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/gmake cmTC_21b74/fast && /usr/local/bin/gmake  -f CMakeFiles/cmTC_21b74.dir/build.make CMakeFiles/cmTC_21b74.dir/build
+gmake[1]: Entering directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21b74.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX0X -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++0x -o CMakeFiles/cmTC_21b74.dir/src.cxx.o -c "/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_21b74
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21b74.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX0X -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_21b74.dir/src.cxx.o -o cmTC_21b74 
+gmake[1]: Leaving directory '/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

@@ -14,7 +14,7 @@ set (CMAKE_CXX_STANDARD 11)
 
 # if not, use manual specification of the OpenCVConfig.cmake path
 # and comment previous line of automatic finding
-find_package(OpenCV REQUIRED PATHS /Users/chrisMac/opencv/build/ NO_DEFAULT_PATH)  
+find_package(OpenCV REQUIRED PATHS /home/emilioag/Desktop/installation/OpenCV-master/lib/cmake/opencv4 NO_DEFAULT_PATH)  
 
 # If the package has been found, several variables will
 # be set, you can find the full list with descriptions

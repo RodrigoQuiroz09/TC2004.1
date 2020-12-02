@@ -20,17 +20,24 @@ extrac_image_chip to align the image
 
 Facealignment::Facealignment()
 {
-    dlib::deserialize("shape_predictor_5_face_landmarks.dat") >> sp;
+    dlib::deserialize("../../Face_Alignment/src/shape_predictor_5_face_landmarks.dat") >> sp;
 }
 
-cv::Mat Facealignment::facealignment(cv::Mat img, cv::Rect face){
-    std::cout<<img.channels()<<std::endl;
-    dlib::cv_image<dlib::bgr_pixel> image(img);
-    dlib::matrix<dlib::rgb_pixel> matriz;
+cv::Mat Facealignment::facealignment(cv::Mat img, cv::Rect face) //cambiar return 
+{
+    //std::cout<<img.channels()<<std::endl;
+    dlib::cv_image<dlib::rgb_pixel> image(img);
+    cv::Mat resultVector;
+    dlib::matrix<dlib::rgb_pixel> matriz; //declaracion
     assign_image(matriz, image);
     dlib::rectangle rect((long)face.tl().x, (long)face.tl().y, (long)face.br().x - 1, (long)face.br().y - 1);
     dlib::matrix<dlib::rgb_pixel> face_chip;
     dlib::full_object_detection shape = sp(matriz, rect);
-    extract_image_chip(matriz, get_face_chip_details(shape,150,0.25), face_chip);
-    return(dlib::toMat(face_chip));
+    dlib::extract_image_chip(matriz, get_face_chip_details(shape,150,0.25), face_chip);
+    resultVector =dlib::toMat(face_chip).clone();
+    //cv::imshow("algo",resultVector);
+    //cv::waitKey(0);
+    //return(dlib::toMat(face_chip));//return face_chip -to mat
+    return resultVector;
+
 };

@@ -1,0 +1,6 @@
+/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/CMakeFiles/rebuild_cache.dir
+/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/CMakeFiles/edit_cache.dir
+/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/CMakeFiles/my_project.dir
+/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/CMakeFiles/rebuild_cache.dir
+/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/CMakeFiles/edit_cache.dir
+/Users/chrisMac/Desktop/TEC/5 semestre/Software/PFinal/TC2004.1/Feature_Extraction/build/dlib_build/CMakeFiles/dlib.dir

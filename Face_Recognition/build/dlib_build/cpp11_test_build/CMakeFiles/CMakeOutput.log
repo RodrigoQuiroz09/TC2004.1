@@ -1,0 +1,78 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_40f96/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_40f96.dir/build.make CMakeFiles/cmTC_40f96.dir/build
+Building CXX object CMakeFiles/cmTC_40f96.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_40f96.dir/src.cxx.o -c /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_40f96
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40f96.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_40f96.dir/src.cxx.o -o cmTC_40f96 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeeded with the following output:
+Change Dir: /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3cd3d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3cd3d.dir/build.make CMakeFiles/cmTC_3cd3d.dir/build
+Building CXX object CMakeFiles/cmTC_3cd3d.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX0X -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=c++0x -o CMakeFiles/cmTC_3cd3d.dir/src.cxx.o -c /Users/Hayoung/Documents/GitHub/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3cd3d
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cd3d.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX0X -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_3cd3d.dir/src.cxx.o -o cmTC_3cd3d 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /Users/Hayoung/Documents/TC2004.1_V2/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e01b7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e01b7.dir/build.make CMakeFiles/cmTC_e01b7.dir/build
+Building CXX object CMakeFiles/cmTC_e01b7.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_e01b7.dir/src.cxx.o -c /Users/Hayoung/Documents/TC2004.1_V2/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e01b7
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e01b7.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e01b7.dir/src.cxx.o -o cmTC_e01b7 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeeded with the following output:
+Change Dir: /Users/Hayoung/Documents/TC2004.1_V2/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d8aaf/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d8aaf.dir/build.make CMakeFiles/cmTC_d8aaf.dir/build
+Building CXX object CMakeFiles/cmTC_d8aaf.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX0X -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=c++0x -o CMakeFiles/cmTC_d8aaf.dir/src.cxx.o -c /Users/Hayoung/Documents/TC2004.1_V2/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d8aaf
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8aaf.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX0X -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d8aaf.dir/src.cxx.o -o cmTC_d8aaf 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_411df/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_411df.dir/build.make CMakeFiles/cmTC_411df.dir/build
+Building CXX object CMakeFiles/cmTC_411df.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/cmTC_411df.dir/src.cxx.o -c /Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_411df
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_411df.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX11 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_411df.dir/src.cxx.o -o cmTC_411df 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeeded with the following output:
+Change Dir: /Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e6c7e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e6c7e.dir/build.make CMakeFiles/cmTC_e6c7e.dir/build
+Building CXX object CMakeFiles/cmTC_e6c7e.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -DCOMPILER_SUPPORTS_CXX0X -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=c++0x -o CMakeFiles/cmTC_e6c7e.dir/src.cxx.o -c /Users/Hayoung/Documents/Github/TC2004.1/Face_Recognition/build/dlib_build/cpp11_test_build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e6c7e
+/usr/local/Cellar/cmake/3.18.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6c7e.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/c++  -DCOMPILER_SUPPORTS_CXX0X -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e6c7e.dir/src.cxx.o -o cmTC_e6c7e 
+
+
+Source file was:
+int main() { return 0; }
