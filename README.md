@@ -26,6 +26,9 @@ The Feature Extraction module takes a Mat object and extracts its information us
 #### Redundancy
 Last but not least, this module in in charge of storing the data requiered for the entire system to work. Functionalities like registering, removing or updating a client, retrieving a client's image, loading all the registered clients to the memory of the computers in which the system is being executed and generating unique identifiers for each client are to be done by this last module.
 
+#### Fast Search
+The Fast Search module is in charge of searching in a data set if there are any coincidences of one person. This is possible thanks to the FLANN library which is in charge of creating an index based on the features that are in the database. This, allows the comparison between one person and the database using a KNN Neighbor search, making possible for the system to find the 10 closest Feature vectors and return it.
+
 
 ## TO COMPILE WITH PATH
 cmake -DOPEN:STRING=path/to/OpenCV > -DDL:STRING=path/to/Dlib ..
