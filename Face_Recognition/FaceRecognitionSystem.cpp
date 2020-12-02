@@ -6,11 +6,6 @@
         faceAlignment=Facealignment();
         featureExtraction=FeatureExtraction();
 		persistence=new Persistence("prueba.yml");
-<<<<<<< HEAD
-
-=======
-// cd ..
->>>>>>> EntregaFinal
 	}
 	
 	FaceRecognitionSystem::~FaceRecognitionSystem(){}
@@ -26,29 +21,19 @@
 		persistence->writeToDisc();
 	}
 
-<<<<<<< HEAD
-	std::tuple<Subject,bool> FaceRecognitionSystem::personVerification(cv::Mat image2,std::string id){
-		cv::Rect rc;
-		bool validation;
-		rc = faceDetector.detectFace(&image2);
-=======
 	std::tuple<Subject,bool> FaceRecognitionSystem::personVerification(cv::Mat image2,std::string ids){
 		cv::Rect rc;
 		bool validation;
 		rc = faceDetector.detectFace(&image2);
 		std::cout<<ids<<"\n";
 		int id=std::stoi(ids);
->>>>>>> EntregaFinal
+		std::cout<<"numero "<<id<<"\n";
 
 		cv::Mat alignimage=faceAlignment.facealignment(image2, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);
 		cv::imshow("hello",alignimage);
 		cv::waitKey(0);
-<<<<<<< HEAD
-			
-=======
 		
->>>>>>> EntregaFinal
 		int result = featureExtraction.comparison(vector, persistence->getUserFace(id), .5);
 
 		Subject datos(persistence->getUserStudentID(id), persistence->getUserName(id), persistence->getUserCareer(id), 
@@ -72,24 +57,15 @@
 
 	std::vector<std::tuple<std::string,std::string>> FaceRecognitionSystem::personIdentification(cv::Mat mat){
 		cv::Rect rc;
-<<<<<<< HEAD
-=======
 		int key;
->>>>>>> EntregaFinal
 		rc = faceDetector.detectFace(&mat);
 		cv::Mat alignimage=faceAlignment.facealignment(mat, rc);
 		cv::Mat vector=featureExtraction.getFeatures(alignimage);	
 		cv::Mat resultados=persistence->searchMat(vector);
 		std::vector<std::tuple<std::string,std::string>> data;
 		std::tuple<std::string,std::string> info;
-<<<<<<< HEAD
-
-		for(int i=0; i<resultados.cols;i++){
-			std::string key = "A" + std::to_string(resultados.at<int>(i)); 
-=======
 		for(int i=0; i<resultados.cols;i++){
 			key = resultados.at<int>(i); 
->>>>>>> EntregaFinal
 			std::string id = persistence->getUserStudentID(key);
 			std::string photo = persistence->getUserPfp(key);
 			info = std::make_tuple(id, photo);

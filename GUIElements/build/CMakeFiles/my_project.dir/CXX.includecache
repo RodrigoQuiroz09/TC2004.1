@@ -64,20 +64,12 @@ vector
 tuple
 -
 
-/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.cpp
-moduleFS.hpp
-/home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
-iostream
--
-
 /home/rojo/Documentos/Git/TC2004.1/FastSearch/moduleFS.hpp
 opencv2/opencv.hpp
 -
 opencv2/flann.hpp
 -
 
-<<<<<<< HEAD
-=======
 /home/rojo/Documentos/Git/TC2004.1/Feature_Extraction/source/moduleFE.hpp
 dlib/dnn.h
 -
@@ -88,7 +80,6 @@ dlib/opencv.h
 opencv2/opencv.hpp
 -
 
->>>>>>> EntregaFinal
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp

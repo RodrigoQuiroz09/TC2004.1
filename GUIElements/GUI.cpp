@@ -262,55 +262,55 @@ void Gui::startGUI() {
 				funcCount++;
 			}
 			//std::cout<<"Tamano"<<std::get<0>(userIdenti.at(8))<<std::endl;
-			veriPic = cv::imread("/home/emilioag/Documents/TC2004.1/GUIElements/images/test.jpg"); //modificar codigo
+			veriPic = cv::imread(std::get<1>(userIdenti.at(0))); //modificar codigo
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 300, 100, veriPicShow);
-			cvui::printf(frame, 300, 180, 0.4, 0xF2F7FB, "ELBUENO");
+			cvui::printf(frame, 300, 180, 0.4, 0xF2F7FB, "Nombre");
 			cvui::text(frame, 300, 200, std::get<0>(userIdenti.at(0)));
 
-			//veriPic = cv::imread(std::get<1>(userIdenti.at(1)));
+			veriPic = cv::imread(std::get<1>(userIdenti.at(1)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 540, 100, veriPicShow);
 			cvui::printf(frame, 540, 180, 0.4, 0xF2F7FB, "Nombre");
 			cvui::text(frame, 540, 200, std::get<0>(userIdenti.at(1)));
 
-			//veriPic = cv::imread(std::get<1>(userIdenti.at(2)));
+			veriPic = cv::imread(std::get<1>(userIdenti.at(2)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 780, 100, veriPicShow);
 			cvui::printf(frame, 780, 180, 0.4, 0xF2F7FB, "Nombre");
 			cvui::text(frame, 780, 200, std::get<0>(userIdenti.at(2)));
 
-			//veriPic = cv::imread(std::get<1>(userIdenti.at(3)));
+			veriPic = cv::imread(std::get<1>(userIdenti.at(3)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 300, 230, veriPicShow);
 			cvui::printf(frame, 300, 310, 0.4, 0xF2F7FB, "Nombre");
 			cvui::text(frame, 300, 330, std::get<0>(userIdenti.at(3)));
 
-			//veriPic = cv::imread(std::get<1>(userIdenti.at(4)));
+			veriPic = cv::imread(std::get<1>(userIdenti.at(4)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 540, 230, veriPicShow);
 			cvui::printf(frame, 540, 310, 0.4, 0xF2F7FB, "Nombre");
 			cvui::text(frame, 540, 330, std::get<0>(userIdenti.at(4)));
 
-			//veriPic = cv::imread(std::get<1>(userIdenti.at(5)));
+			veriPic = cv::imread(std::get<1>(userIdenti.at(5)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 780, 230, veriPicShow);
 			cvui::printf(frame, 780, 310, 0.4, 0xF2F7FB, "Nombre");
 			cvui::text(frame, 780, 330, std::get<0>(userIdenti.at(5)));
 
-			//veriPic = cv::imread(std::get<1>(userIdenti.at(6)));
+			veriPic = cv::imread(std::get<1>(userIdenti.at(6)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 300, 360, veriPicShow);
 			cvui::printf(frame, 300, 440, 0.4, 0xF2F7FB, "Nombre");
 			cvui::text(frame, 300, 460, std::get<0>(userIdenti.at(6)));
 
-			//veriPic = cv::imread(std::get<1>(userIdenti.at(7)));
+			veriPic = cv::imread(std::get<1>(userIdenti.at(7)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 540, 360, veriPicShow);
 			cvui::printf(frame, 540, 440, 0.4, 0xF2F7FB, "Nombre");
 			cvui::text(frame, 540, 460, std::get<0>(userIdenti.at(7)));
 
-			//veriPic = cv::imread(std::get<1>(userIdenti.at(8)));
+			veriPic = cv::imread(std::get<1>(userIdenti.at(8)));
 			cv::resize(veriPic, veriPicShow, smallSize);
 			cvui::image(frame, 780, 360, veriPicShow);
 			cvui::printf(frame, 780, 440, 0.4, 0xF2F7FB, "Nombre");
