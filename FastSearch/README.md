@@ -7,6 +7,7 @@ The FastSearch construct initializes the matrix of indexes and distances that wo
 SearchIndex has as a parameter a matrix that works hand in hand with the knnSearch method of the Flan library that, by means of indexes and distances, compares the matrix of the image taken with the images from the database and gives us 10 neighbors, which means the 10 people most similar to our user in question.
 
 IMPORTANT*
+
 You must download the DLib library, to be able to compile and run *
 
 You must modify the CMakeLists.txt with the correct Dlib and OpenCV path of the one that compiles this module
